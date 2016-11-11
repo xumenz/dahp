@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class Class1
+    public class PersonInfo
     {
     }
 }
