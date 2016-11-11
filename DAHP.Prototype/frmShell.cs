@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DAHP.Prototype
 {
-    public partial class Form1 : Form
+    public partial class frmShell : Form
     {
-        public Form1()
+        public frmShell()
         {
             InitializeComponent();
         }
