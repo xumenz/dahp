@@ -16,5 +16,49 @@ namespace DAHP.Prototype
         {
             InitializeComponent();
         }
+
+        private void taskToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmShell_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNewEmployee frm = new frmNewEmployee();
+            frm.ShowDialog();
+        }
+
+        private void newQualificationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNewQualification frm = new frmNewQualification ();
+            frm.ShowDialog();
+        }
+
+        private void newQueryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNewQuery frm = new frmNewQuery();
+            frm.ShowDialog();
+        }
+
+        private void newDesignationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNewDesignation frm = new frmNewDesignation();
+            frm.ShowDialog();
+        }
+
+        private void bayelsaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -45,16 +45,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmNewDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewDepartment.Designer.cs">
+      <DependentUpon>frmNewDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewDesignation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewDesignation.Designer.cs">
+      <DependentUpon>frmNewDesignation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewPromotion.Designer.cs">
+      <DependentUpon>frmNewPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewQualification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewQualification.Designer.cs">
+      <DependentUpon>frmNewQualification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewQuery.Designer.cs">
+      <DependentUpon>frmNewQuery.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmShell.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmShell.Designer.cs">
       <DependentUpon>frmShell.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewEmployee.Designer.cs">
+      <DependentUpon>frmNewEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmNewDepartment.resx">
+      <DependentUpon>frmNewDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewDesignation.resx">
+      <DependentUpon>frmNewDesignation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewPromotion.resx">
+      <DependentUpon>frmNewPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewQualification.resx">
+      <DependentUpon>frmNewQualification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewQuery.resx">
+      <DependentUpon>frmNewQuery.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmShell.resx">
       <DependentUpon>frmShell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewEmployee.resx">
+      <DependentUpon>frmNewEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
