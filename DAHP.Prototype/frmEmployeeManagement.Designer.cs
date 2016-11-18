@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeManagement));
             this.headerPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label1t = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPersonInformation = new System.Windows.Forms.Button();
             this.btnContactInformation = new System.Windows.Forms.Button();
@@ -60,7 +60,7 @@
             // headerPanel
             // 
             this.headerPanel.BackColor = System.Drawing.Color.White;
-            this.headerPanel.Controls.Add(this.label1);
+            this.headerPanel.Controls.Add(this.label1t);
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerPanel.ForeColor = System.Drawing.Color.Black;
             this.headerPanel.Location = new System.Drawing.Point(0, 0);
@@ -69,17 +69,17 @@
             this.headerPanel.Size = new System.Drawing.Size(600, 66);
             this.headerPanel.TabIndex = 1;
             // 
-            // label1
+            // label1t
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(203, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 27);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Employee Management ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1t.AutoSize = true;
+            this.label1t.BackColor = System.Drawing.Color.Transparent;
+            this.label1t.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1t.Location = new System.Drawing.Point(203, 9);
+            this.label1t.Name = "label1t";
+            this.label1t.Size = new System.Drawing.Size(242, 27);
+            this.label1t.TabIndex = 0;
+            this.label1t.Text = "Employee Management ";
+            this.label1t.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -281,7 +281,7 @@
         #endregion
 
         private System.Windows.Forms.Panel headerPanel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label1t;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnContactInformation;
         private System.Windows.Forms.Button btnPersonInformation;
