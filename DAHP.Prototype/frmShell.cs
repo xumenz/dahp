@@ -60,5 +60,11 @@ namespace DAHP.Prototype
         {
 
         }
+
+        private void employeeManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEmployeeManagement frm = new frmEmployeeManagement();
+            frm.ShowDialog();
+        }
     }
 }
