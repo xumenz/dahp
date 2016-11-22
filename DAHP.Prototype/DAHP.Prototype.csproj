@@ -51,12 +51,6 @@
     <Compile Include="frmEmployeeManagement.Designer.cs">
       <DependentUpon>frmEmployeeManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEmployeeManagement2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEmployeeManagement2.Designer.cs">
-      <DependentUpon>frmEmployeeManagement2.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmNewDepartment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,17 +69,17 @@
     <Compile Include="frmNewPromotion.Designer.cs">
       <DependentUpon>frmNewPromotion.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNewQualification.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmNewQualification.Designer.cs">
-      <DependentUpon>frmNewQualification.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmNewQuery.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmNewQuery.Designer.cs">
       <DependentUpon>frmNewQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQualifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQualifications.Designer.cs">
+      <DependentUpon>frmQualifications.cs</DependentUpon>
     </Compile>
     <Compile Include="frmShell.cs">
       <SubType>Form</SubType>
@@ -104,9 +98,6 @@
     <EmbeddedResource Include="frmEmployeeManagement.resx">
       <DependentUpon>frmEmployeeManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEmployeeManagement2.resx">
-      <DependentUpon>frmEmployeeManagement2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmNewDepartment.resx">
       <DependentUpon>frmNewDepartment.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,11 +107,11 @@
     <EmbeddedResource Include="frmNewPromotion.resx">
       <DependentUpon>frmNewPromotion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNewQualification.resx">
-      <DependentUpon>frmNewQualification.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmNewQuery.resx">
       <DependentUpon>frmNewQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQualifications.resx">
+      <DependentUpon>frmQualifications.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShell.resx">
       <DependentUpon>frmShell.cs</DependentUpon>
