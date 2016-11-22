@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmQueryTerminal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQueryTerminal.Designer.cs">
+      <DependentUpon>frmQueryTerminal.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmState.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,12 +99,6 @@
     <Compile Include="frmNewPromotion.Designer.cs">
       <DependentUpon>frmNewPromotion.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNewQualification.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmNewQualification.Designer.cs">
-      <DependentUpon>frmNewQualification.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmNewQuery.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +119,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmQueryTerminal.resx">
+      <DependentUpon>frmQueryTerminal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmState.resx">
       <DependentUpon>frmState.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,9 +145,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewPromotion.resx">
       <DependentUpon>frmNewPromotion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNewQualification.resx">
-      <DependentUpon>frmNewQualification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewQuery.resx">
       <DependentUpon>frmNewQuery.cs</DependentUpon>
