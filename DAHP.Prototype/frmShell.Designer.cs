@@ -62,6 +62,7 @@
             this.databaseBackupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataConnectionConfigurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.searchEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,7 +89,7 @@
             this.newUnitToolStripMenuItem,
             this.newQualificationToolStripMenuItem});
             this.taskToolStripMenuItem.Name = "taskToolStripMenuItem";
-            this.taskToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
+            this.taskToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.taskToolStripMenuItem.Text = "Task";
             this.taskToolStripMenuItem.Click += new System.EventHandler(this.taskToolStripMenuItem_Click);
             // 
@@ -154,7 +155,8 @@
             this.stateAndLGAManagementToolStripMenuItem,
             this.queryTerminalToolStripMenuItem,
             this.departmentUnitToolStripMenuItem,
-            this.qualificationToolStripMenuItem});
+            this.qualificationToolStripMenuItem,
+            this.searchEmployeeToolStripMenuItem});
             this.hrToolStripMenuItem.Name = "hrToolStripMenuItem";
             this.hrToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
             this.hrToolStripMenuItem.Text = "HR Management";
@@ -321,6 +323,13 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // searchEmployeeToolStripMenuItem
+            // 
+            this.searchEmployeeToolStripMenuItem.Name = "searchEmployeeToolStripMenuItem";
+            this.searchEmployeeToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.searchEmployeeToolStripMenuItem.Text = "Search Employee";
+            this.searchEmployeeToolStripMenuItem.Click += new System.EventHandler(this.searchEmployeeToolStripMenuItem_Click);
+            // 
             // frmShell
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -377,6 +386,7 @@
         private System.Windows.Forms.ToolStripMenuItem accountsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iTToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchEmployeeToolStripMenuItem;
     }
 }
 

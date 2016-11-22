@@ -40,8 +40,8 @@ namespace DAHP.Prototype
 
         private void newQualificationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmNewQualification frm = new frmNewQualification ();
-            frm.ShowDialog();
+            //frmNewQualification frm = new frmNewQualification ();
+            //frm.ShowDialog();
         }
 
         private void newQueryToolStripMenuItem_Click(object sender, EventArgs e)
@@ -71,6 +71,13 @@ namespace DAHP.Prototype
         private void stateAndLGAManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmStateAndLocal frm = new frmStateAndLocal();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void searchEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSearchEmployee frm = new frmSearchEmployee();
             frm.MdiParent = this;
             frm.Show();
         }

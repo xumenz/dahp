@@ -45,11 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmQualifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQualifications.Designer.cs">
+      <DependentUpon>frmQualifications.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQueryTerminal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmQueryTerminal.Designer.cs">
       <DependentUpon>frmQueryTerminal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchEmployee.Designer.cs">
+      <DependentUpon>frmSearchEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="frmState.cs">
       <SubType>Form</SubType>
@@ -119,8 +131,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmQualifications.resx">
+      <DependentUpon>frmQualifications.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQueryTerminal.resx">
       <DependentUpon>frmQueryTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchEmployee.resx">
+      <DependentUpon>frmSearchEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmState.resx">
       <DependentUpon>frmState.cs</DependentUpon>
