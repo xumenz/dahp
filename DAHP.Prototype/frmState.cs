@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DAHP.Prototype
 {
-    public partial class frmNewDesignation : Form
+    public partial class frmState : Form
     {
-        public frmNewDesignation()
+        public frmState()
         {
             InitializeComponent();
         }

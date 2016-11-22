@@ -41,23 +41,6 @@
             this.hrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stateAndLGAManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stateManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.akwaIbomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.akwaIbomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bayelsaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.akwaIbomToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bauchiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bayelsaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.benueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bornoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lGAManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abakToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.easternOboloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.esitEketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.essienUdimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.etimEkpoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.etinanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.queryTerminalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.departmentUnitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.departmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -105,7 +88,7 @@
             this.newUnitToolStripMenuItem,
             this.newQualificationToolStripMenuItem});
             this.taskToolStripMenuItem.Name = "taskToolStripMenuItem";
-            this.taskToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.taskToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
             this.taskToolStripMenuItem.Text = "Task";
             this.taskToolStripMenuItem.Click += new System.EventHandler(this.taskToolStripMenuItem_Click);
             // 
@@ -185,132 +168,10 @@
             // 
             // stateAndLGAManagementToolStripMenuItem
             // 
-            this.stateAndLGAManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.stateManagementToolStripMenuItem,
-            this.lGAManagementToolStripMenuItem});
             this.stateAndLGAManagementToolStripMenuItem.Name = "stateAndLGAManagementToolStripMenuItem";
             this.stateAndLGAManagementToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.stateAndLGAManagementToolStripMenuItem.Text = "State and LGA Management";
-            // 
-            // stateManagementToolStripMenuItem
-            // 
-            this.stateManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.akwaIbomToolStripMenuItem,
-            this.akwaIbomToolStripMenuItem1,
-            this.bayelsaToolStripMenuItem,
-            this.akwaIbomToolStripMenuItem2,
-            this.bauchiToolStripMenuItem,
-            this.bayelsaToolStripMenuItem1,
-            this.benueToolStripMenuItem,
-            this.bornoToolStripMenuItem});
-            this.stateManagementToolStripMenuItem.Name = "stateManagementToolStripMenuItem";
-            this.stateManagementToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.stateManagementToolStripMenuItem.Text = "State Management";
-            // 
-            // akwaIbomToolStripMenuItem
-            // 
-            this.akwaIbomToolStripMenuItem.Name = "akwaIbomToolStripMenuItem";
-            this.akwaIbomToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.akwaIbomToolStripMenuItem.Text = "Abia";
-            // 
-            // akwaIbomToolStripMenuItem1
-            // 
-            this.akwaIbomToolStripMenuItem1.Name = "akwaIbomToolStripMenuItem1";
-            this.akwaIbomToolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
-            this.akwaIbomToolStripMenuItem1.Text = "Adamawa";
-            // 
-            // bayelsaToolStripMenuItem
-            // 
-            this.bayelsaToolStripMenuItem.Name = "bayelsaToolStripMenuItem";
-            this.bayelsaToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.bayelsaToolStripMenuItem.Text = "Anambra";
-            this.bayelsaToolStripMenuItem.Click += new System.EventHandler(this.bayelsaToolStripMenuItem_Click);
-            // 
-            // akwaIbomToolStripMenuItem2
-            // 
-            this.akwaIbomToolStripMenuItem2.Name = "akwaIbomToolStripMenuItem2";
-            this.akwaIbomToolStripMenuItem2.Size = new System.Drawing.Size(134, 22);
-            this.akwaIbomToolStripMenuItem2.Text = "Akwa Ibom";
-            // 
-            // bauchiToolStripMenuItem
-            // 
-            this.bauchiToolStripMenuItem.Name = "bauchiToolStripMenuItem";
-            this.bauchiToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.bauchiToolStripMenuItem.Text = "Bauchi";
-            // 
-            // bayelsaToolStripMenuItem1
-            // 
-            this.bayelsaToolStripMenuItem1.Name = "bayelsaToolStripMenuItem1";
-            this.bayelsaToolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
-            this.bayelsaToolStripMenuItem1.Text = "Bayelsa";
-            // 
-            // benueToolStripMenuItem
-            // 
-            this.benueToolStripMenuItem.Name = "benueToolStripMenuItem";
-            this.benueToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.benueToolStripMenuItem.Text = "Benue";
-            // 
-            // bornoToolStripMenuItem
-            // 
-            this.bornoToolStripMenuItem.Name = "bornoToolStripMenuItem";
-            this.bornoToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.bornoToolStripMenuItem.Text = "Borno";
-            // 
-            // lGAManagementToolStripMenuItem
-            // 
-            this.lGAManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.abakToolStripMenuItem,
-            this.easternOboloToolStripMenuItem,
-            this.eketToolStripMenuItem,
-            this.esitEketToolStripMenuItem,
-            this.essienUdimToolStripMenuItem,
-            this.etimEkpoToolStripMenuItem,
-            this.etinanToolStripMenuItem});
-            this.lGAManagementToolStripMenuItem.Name = "lGAManagementToolStripMenuItem";
-            this.lGAManagementToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.lGAManagementToolStripMenuItem.Text = "Akwa Ibom";
-            // 
-            // abakToolStripMenuItem
-            // 
-            this.abakToolStripMenuItem.Name = "abakToolStripMenuItem";
-            this.abakToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.abakToolStripMenuItem.Text = "Abak";
-            // 
-            // easternOboloToolStripMenuItem
-            // 
-            this.easternOboloToolStripMenuItem.Name = "easternOboloToolStripMenuItem";
-            this.easternOboloToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.easternOboloToolStripMenuItem.Text = "Eastern Obolo";
-            // 
-            // eketToolStripMenuItem
-            // 
-            this.eketToolStripMenuItem.Name = "eketToolStripMenuItem";
-            this.eketToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.eketToolStripMenuItem.Text = "Eket";
-            // 
-            // esitEketToolStripMenuItem
-            // 
-            this.esitEketToolStripMenuItem.Name = "esitEketToolStripMenuItem";
-            this.esitEketToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.esitEketToolStripMenuItem.Text = "Esit Eket";
-            // 
-            // essienUdimToolStripMenuItem
-            // 
-            this.essienUdimToolStripMenuItem.Name = "essienUdimToolStripMenuItem";
-            this.essienUdimToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.essienUdimToolStripMenuItem.Text = "Essien Udim";
-            // 
-            // etimEkpoToolStripMenuItem
-            // 
-            this.etimEkpoToolStripMenuItem.Name = "etimEkpoToolStripMenuItem";
-            this.etimEkpoToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.etimEkpoToolStripMenuItem.Text = "Etim Ekpo";
-            // 
-            // etinanToolStripMenuItem
-            // 
-            this.etinanToolStripMenuItem.Name = "etinanToolStripMenuItem";
-            this.etinanToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.etinanToolStripMenuItem.Text = "Etinan";
+            this.stateAndLGAManagementToolStripMenuItem.Click += new System.EventHandler(this.stateAndLGAManagementToolStripMenuItem_Click);
             // 
             // queryTerminalToolStripMenuItem
             // 
@@ -494,8 +355,6 @@
         private System.Windows.Forms.ToolStripMenuItem hrToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeeManagementToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stateAndLGAManagementToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem stateManagementToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lGAManagementToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem queryTerminalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem departmentUnitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem departmentToolStripMenuItem;
@@ -512,21 +371,6 @@
         private System.Windows.Forms.ToolStripMenuItem dataConnectionConfigurationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem departmentToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem unitToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem akwaIbomToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem akwaIbomToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem bayelsaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem akwaIbomToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem bauchiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bayelsaToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem benueToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bornoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem abakToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem easternOboloToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eketToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem esitEketToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem essienUdimToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem etimEkpoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem etinanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem operationsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salesAndMarketingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem advertisingAndPromotionToolStripMenuItem;

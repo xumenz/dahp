@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace DAHP.Prototype
 {
-    public partial class frmQualifications : Form
+    public partial class frmLga : Form
     {
-        public frmQualifications()
+        public frmLga()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void frmNewDesignation_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

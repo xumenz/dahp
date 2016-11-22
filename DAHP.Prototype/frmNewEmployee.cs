@@ -137,5 +137,20 @@ namespace DAHP.Prototype
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblFinishDate_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

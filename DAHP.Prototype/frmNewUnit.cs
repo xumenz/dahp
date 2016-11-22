@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace DAHP.Prototype
 {
-    public partial class frmNewDesignation : Form
+    public partial class frmEmployeeManagement2 : Form
     {
-        public frmNewDesignation()
+        public frmEmployeeManagement2()
         {
             InitializeComponent();
         }
 
-        private void frmNewDesignation_Load(object sender, EventArgs e)
+        private void txtName_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
