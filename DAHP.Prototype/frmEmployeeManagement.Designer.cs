@@ -66,7 +66,7 @@
             this.headerPanel.Location = new System.Drawing.Point(0, 0);
             this.headerPanel.Margin = new System.Windows.Forms.Padding(0);
             this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(600, 66);
+            this.headerPanel.Size = new System.Drawing.Size(600, 48);
             this.headerPanel.TabIndex = 1;
             // 
             // label1t
@@ -92,9 +92,9 @@
             this.panel1.Controls.Add(this.btnContactInformation);
             this.panel1.Controls.Add(this.btnPersonInformation);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 66);
+            this.panel1.Location = new System.Drawing.Point(0, 48);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(146, 456);
+            this.panel1.Size = new System.Drawing.Size(146, 439);
             this.panel1.TabIndex = 2;
             // 
             // btnPersonInformation
@@ -166,9 +166,9 @@
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.grbSearchEmployee);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(146, 66);
+            this.panel2.Location = new System.Drawing.Point(146, 48);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(454, 456);
+            this.panel2.Size = new System.Drawing.Size(454, 439);
             this.panel2.TabIndex = 3;
             // 
             // grbSearchEmployee
@@ -234,9 +234,9 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(25, 208);
+            this.dataGridView1.Location = new System.Drawing.Point(25, 246);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(394, 123);
+            this.dataGridView1.Size = new System.Drawing.Size(394, 132);
             this.dataGridView1.TabIndex = 1;
             // 
             // Column1
@@ -260,7 +260,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(600, 522);
+            this.ClientSize = new System.Drawing.Size(600, 487);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.headerPanel);
