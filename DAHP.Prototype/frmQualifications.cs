@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace DAHP.Prototype
 {
-    public partial class frmNewUnit : Form
+    public partial class frmQualifications : Form
     {
-        public frmNewUnit()
+        public frmQualifications()
         {
             InitializeComponent();
         }
 
-        private void Unit_Load(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
 
         }
