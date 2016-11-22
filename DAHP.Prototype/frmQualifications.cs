@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace DAHP.Prototype
 {
-    public partial class frmEmployeeManagement2 : Form
+    public partial class frmQualifications : Form
     {
-        public frmEmployeeManagement2()
+        public frmQualifications()
         {
             InitializeComponent();
         }
 
-        private void txtName_TextChanged(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
 
         }
