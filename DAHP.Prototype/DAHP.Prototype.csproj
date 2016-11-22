@@ -89,6 +89,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmNewUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewUnit.Designer.cs">
+      <DependentUpon>frmNewUnit.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmNewDepartment.resx">
       <DependentUpon>frmNewDepartment.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +125,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmNewUnit.resx">
+      <DependentUpon>frmNewUnit.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace DAHP.Prototype
 {
-    public partial class frmNewPromotion : Form
+    public partial class frmNewUnit : Form
     {
-        public frmNewPromotion()
+        public frmNewUnit()
         {
             InitializeComponent();
         }
 
-        private void frmNewPromotion_Load(object sender, EventArgs e)
+        private void Unit_Load(object sender, EventArgs e)
         {
 
         }
