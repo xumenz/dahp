@@ -1,6 +1,6 @@
 ﻿namespace DAHP.Prototype
 {
-    partial class frmNewDesignation
+    partial class frmLga
     {
         /// <summary>
         /// Required designer variable.
@@ -29,15 +29,19 @@
         private void InitializeComponent()
         {
             this.gbSave = new System.Windows.Forms.GroupBox();
+            this.lblStateName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtLga = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.txtDesignation = new System.Windows.Forms.TextBox();
             this.gbSave.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbSave
             // 
-            this.gbSave.Controls.Add(this.txtDesignation);
+            this.gbSave.Controls.Add(this.lblStateName);
+            this.gbSave.Controls.Add(this.label1);
+            this.gbSave.Controls.Add(this.txtLga);
             this.gbSave.Controls.Add(this.btnCancel);
             this.gbSave.Controls.Add(this.btnSave);
             this.gbSave.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -47,11 +51,36 @@
             this.gbSave.Size = new System.Drawing.Size(340, 118);
             this.gbSave.TabIndex = 1;
             this.gbSave.TabStop = false;
-            this.gbSave.Text = "Enter/Modify Designation";
+            this.gbSave.Text = "Enter/Modify LGA";
+            // 
+            // lblStateName
+            // 
+            this.lblStateName.AutoSize = true;
+            this.lblStateName.Location = new System.Drawing.Point(60, 27);
+            this.lblStateName.Name = "lblStateName";
+            this.lblStateName.Size = new System.Drawing.Size(39, 18);
+            this.lblStateName.TabIndex = 8;
+            this.lblStateName.Text = "State";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 18);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "State : ";
+            // 
+            // txtLga
+            // 
+            this.txtLga.Location = new System.Drawing.Point(15, 48);
+            this.txtLga.Name = "txtLga";
+            this.txtLga.Size = new System.Drawing.Size(295, 23);
+            this.txtLga.TabIndex = 6;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(230, 77);
+            this.btnCancel.Location = new System.Drawing.Point(230, 83);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(77, 29);
             this.btnCancel.TabIndex = 5;
@@ -61,21 +90,14 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(147, 77);
+            this.btnSave.Location = new System.Drawing.Point(147, 83);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(77, 29);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
-            // txtDesignation
-            // 
-            this.txtDesignation.Location = new System.Drawing.Point(12, 34);
-            this.txtDesignation.Name = "txtDesignation";
-            this.txtDesignation.Size = new System.Drawing.Size(295, 23);
-            this.txtDesignation.TabIndex = 6;
-            // 
-            // frmNewDesignation
+            // frmLga
             // 
             this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -83,9 +105,9 @@
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(340, 118);
             this.Controls.Add(this.gbSave);
-            this.Name = "frmNewDesignation";
+            this.Name = "frmLga";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Designation";
+            this.Text = "Local Government Area";
             this.Load += new System.EventHandler(this.frmNewDesignation_Load);
             this.gbSave.ResumeLayout(false);
             this.gbSave.PerformLayout();
@@ -98,7 +120,9 @@
         private System.Windows.Forms.GroupBox gbSave;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox txtDesignation;
+        private System.Windows.Forms.TextBox txtLga;
+        private System.Windows.Forms.Label lblStateName;
+        private System.Windows.Forms.Label label1;
 
     }
 }

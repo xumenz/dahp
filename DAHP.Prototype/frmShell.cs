@@ -53,12 +53,26 @@ namespace DAHP.Prototype
         private void newDesignationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmNewDesignation frm = new frmNewDesignation();
-            frm.ShowDialog();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void bayelsaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void employeeManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEmployeeManagement frm = new frmEmployeeManagement();
+            frm.ShowDialog();
+        }
+
+        private void stateAndLGAManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmStateAndLocal frm = new frmStateAndLocal();
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }
