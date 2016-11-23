@@ -52,6 +52,7 @@
             this.administrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.qualificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.payrolManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salaryAllowanceGridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salaryGridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,7 +63,6 @@
             this.databaseBackupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataConnectionConfigurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.searchEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -251,6 +251,13 @@
             this.qualificationToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.qualificationToolStripMenuItem.Text = "Qualification";
             // 
+            // searchEmployeeToolStripMenuItem
+            // 
+            this.searchEmployeeToolStripMenuItem.Name = "searchEmployeeToolStripMenuItem";
+            this.searchEmployeeToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.searchEmployeeToolStripMenuItem.Text = "Search Employee";
+            this.searchEmployeeToolStripMenuItem.Click += new System.EventHandler(this.searchEmployeeToolStripMenuItem_Click);
+            // 
             // payrolManagementToolStripMenuItem
             // 
             this.payrolManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -269,6 +276,7 @@
             this.salaryAllowanceGridToolStripMenuItem.Name = "salaryAllowanceGridToolStripMenuItem";
             this.salaryAllowanceGridToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.salaryAllowanceGridToolStripMenuItem.Text = "Salary/Allowance Grid";
+            this.salaryAllowanceGridToolStripMenuItem.Click += new System.EventHandler(this.salaryAllowanceGridToolStripMenuItem_Click);
             // 
             // salaryGridToolStripMenuItem
             // 
@@ -322,13 +330,6 @@
             this.statusStrip1.Size = new System.Drawing.Size(984, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // searchEmployeeToolStripMenuItem
-            // 
-            this.searchEmployeeToolStripMenuItem.Name = "searchEmployeeToolStripMenuItem";
-            this.searchEmployeeToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
-            this.searchEmployeeToolStripMenuItem.Text = "Search Employee";
-            this.searchEmployeeToolStripMenuItem.Click += new System.EventHandler(this.searchEmployeeToolStripMenuItem_Click);
             // 
             // frmShell
             // 

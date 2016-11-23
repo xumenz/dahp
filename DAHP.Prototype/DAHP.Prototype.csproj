@@ -45,6 +45,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCategoryReduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoryReduction.Designer.cs">
+      <DependentUpon>frmCategoryReduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeePaymentSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeePaymentSchedule.Designer.cs">
+      <DependentUpon>frmEmployeePaymentSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJobHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJobHistory.Designer.cs">
+      <DependentUpon>frmJobHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQualifications.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +98,12 @@
     </Compile>
     <Compile Include="frmDepartment.Designer.cs">
       <DependentUpon>frmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalarayAndAllowance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalarayAndAllowance.Designer.cs">
+      <DependentUpon>frmSalarayAndAllowance.cs</DependentUpon>
     </Compile>
     <Compile Include="frmStateAndLocal.cs">
       <SubType>Form</SubType>
@@ -131,6 +155,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCategoryReduction.resx">
+      <DependentUpon>frmCategoryReduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeePaymentSchedule.resx">
+      <DependentUpon>frmEmployeePaymentSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJobHistory.resx">
+      <DependentUpon>frmJobHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQualifications.resx">
       <DependentUpon>frmQualifications.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDepartment.resx">
       <DependentUpon>frmDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalarayAndAllowance.resx">
+      <DependentUpon>frmSalarayAndAllowance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStateAndLocal.resx">
       <DependentUpon>frmStateAndLocal.cs</DependentUpon>

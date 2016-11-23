@@ -81,5 +81,12 @@ namespace DAHP.Prototype
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void salaryAllowanceGridToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSalarayAndAllowance frm = new frmSalarayAndAllowance();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
