@@ -45,11 +45,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmEmployeeCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeCategory.Designer.cs">
+      <DependentUpon>frmEmployeeCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewPromotion.Designer.cs">
+      <DependentUpon>frmNewPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentSchedules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentSchedules.Designer.cs">
+      <DependentUpon>frmPaymentSchedules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQualifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQualifications.Designer.cs">
+      <DependentUpon>frmQualifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmploymentInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmploymentInformation.Designer.cs">
+      <DependentUpon>EmploymentInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQueryTerminal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmQueryTerminal.Designer.cs">
       <DependentUpon>frmQueryTerminal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLga.Designer.cs">
+      <DependentUpon>frmLga.cs</DependentUpon>
     </Compile>
     <Compile Include="frmState.cs">
       <SubType>Form</SubType>
@@ -75,12 +111,6 @@
     <Compile Include="frmStateAndLocal.Designer.cs">
       <DependentUpon>frmStateAndLocal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLga.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLga.Designer.cs">
-      <DependentUpon>frmLga.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmUnit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,12 +122,6 @@
     </Compile>
     <Compile Include="frmNewDesignation.Designer.cs">
       <DependentUpon>frmNewDesignation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmNewPromotion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmNewPromotion.Designer.cs">
-      <DependentUpon>frmNewPromotion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmNewQuery.cs">
       <SubType>Form</SubType>
@@ -119,8 +143,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmEmployeeCategory.resx">
+      <DependentUpon>frmEmployeeCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewPromotion.resx">
+      <DependentUpon>frmNewPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentSchedules.resx">
+      <DependentUpon>frmPaymentSchedules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQualifications.resx">
+      <DependentUpon>frmQualifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmploymentInformation.resx">
+      <DependentUpon>EmploymentInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQueryTerminal.resx">
       <DependentUpon>frmQueryTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLga.resx">
+      <DependentUpon>frmLga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmState.resx">
       <DependentUpon>frmState.cs</DependentUpon>
@@ -134,17 +176,11 @@
     <EmbeddedResource Include="frmStateAndLocal.resx">
       <DependentUpon>frmStateAndLocal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLga.resx">
-      <DependentUpon>frmLga.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmUnit.resx">
       <DependentUpon>frmUnit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewDesignation.resx">
       <DependentUpon>frmNewDesignation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNewPromotion.resx">
-      <DependentUpon>frmNewPromotion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewQuery.resx">
       <DependentUpon>frmNewQuery.cs</DependentUpon>

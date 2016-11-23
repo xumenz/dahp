@@ -86,7 +86,7 @@
             this.Name = "frmState";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "State";
-            this.Load += new System.EventHandler(this.frmNewDesignation_Load);
+            this.Load += new System.EventHandler(this.frmState_Load);
             this.gbSave.ResumeLayout(false);
             this.gbSave.PerformLayout();
             this.ResumeLayout(false);

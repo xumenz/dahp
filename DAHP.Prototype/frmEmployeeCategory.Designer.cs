@@ -1,6 +1,6 @@
 ﻿namespace DAHP.Prototype
 {
-    partial class frmNewPromotion
+    partial class frmEmployeeCategory
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.gbSave = new System.Windows.Forms.GroupBox();
-            this.lblUnitName = new System.Windows.Forms.Label();
-            this.lblDepartment = new System.Windows.Forms.Label();
-            this.txtPromotion = new System.Windows.Forms.TextBox();
+            this.txtEmploymentCategoryName = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.gbSave.SuspendLayout();
@@ -39,9 +37,7 @@
             // 
             // gbSave
             // 
-            this.gbSave.Controls.Add(this.lblUnitName);
-            this.gbSave.Controls.Add(this.lblDepartment);
-            this.gbSave.Controls.Add(this.txtPromotion);
+            this.gbSave.Controls.Add(this.txtEmploymentCategoryName);
             this.gbSave.Controls.Add(this.btnCancel);
             this.gbSave.Controls.Add(this.btnSave);
             this.gbSave.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -51,36 +47,18 @@
             this.gbSave.Size = new System.Drawing.Size(340, 118);
             this.gbSave.TabIndex = 1;
             this.gbSave.TabStop = false;
-            this.gbSave.Text = "Enter/Modify Promotion";
+            this.gbSave.Text = "Enter/Modify Employee Category";
             // 
-            // lblUnitName
+            // txtEmploymentCategoryName
             // 
-            this.lblUnitName.AutoSize = true;
-            this.lblUnitName.Location = new System.Drawing.Point(97, 27);
-            this.lblUnitName.Name = "lblUnitName";
-            this.lblUnitName.Size = new System.Drawing.Size(32, 18);
-            this.lblUnitName.TabIndex = 8;
-            this.lblUnitName.Text = "Unit";
-            // 
-            // lblDepartment
-            // 
-            this.lblDepartment.AutoSize = true;
-            this.lblDepartment.Location = new System.Drawing.Point(12, 27);
-            this.lblDepartment.Name = "lblDepartment";
-            this.lblDepartment.Size = new System.Drawing.Size(82, 18);
-            this.lblDepartment.TabIndex = 7;
-            this.lblDepartment.Text = "Department:";
-            // 
-            // txtPromotion
-            // 
-            this.txtPromotion.Location = new System.Drawing.Point(15, 48);
-            this.txtPromotion.Name = "txtPromotion";
-            this.txtPromotion.Size = new System.Drawing.Size(295, 23);
-            this.txtPromotion.TabIndex = 6;
+            this.txtEmploymentCategoryName.Location = new System.Drawing.Point(12, 34);
+            this.txtEmploymentCategoryName.Name = "txtEmploymentCategoryName";
+            this.txtEmploymentCategoryName.Size = new System.Drawing.Size(295, 23);
+            this.txtEmploymentCategoryName.TabIndex = 6;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(230, 83);
+            this.btnCancel.Location = new System.Drawing.Point(230, 77);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(77, 29);
             this.btnCancel.TabIndex = 5;
@@ -90,14 +68,14 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(147, 83);
+            this.btnSave.Location = new System.Drawing.Point(147, 77);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(77, 29);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
-            // frmLga
+            // frmEmployeeCategory
             // 
             this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -105,9 +83,9 @@
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(340, 118);
             this.Controls.Add(this.gbSave);
-            this.Name = "frmLga";
+            this.Name = "frmEmployeeCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Promotion";
+            this.Text = "Employee Category";
             this.Load += new System.EventHandler(this.frmNewDesignation_Load);
             this.gbSave.ResumeLayout(false);
             this.gbSave.PerformLayout();
@@ -120,9 +98,7 @@
         private System.Windows.Forms.GroupBox gbSave;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox txtPromotion;
-        private System.Windows.Forms.Label lblUnitName;
-        private System.Windows.Forms.Label lblDepartment;
+        private System.Windows.Forms.TextBox txtEmploymentCategoryName;
 
     }
 }

@@ -40,7 +40,7 @@ namespace DAHP.Prototype
 
         private void newQualificationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmNewQualification frm = new frmNewQualification ();
+            frmQualifications frm = new frmQualifications ();
             frm.ShowDialog();
         }
 

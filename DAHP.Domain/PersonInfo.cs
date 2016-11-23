@@ -8,5 +8,6 @@ namespace DAHP.Domain
 {
     public class PersonInfo
     {
+        
     }
 }

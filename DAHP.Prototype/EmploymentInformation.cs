@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DAHP.Prototype
 {
-    public partial class frmQueryTerminal : Form
+    public partial class EmploymentInformation : Form
     {
-        public frmQueryTerminal()
+        public EmploymentInformation()
         {
             InitializeComponent();
         }
@@ -37,7 +37,22 @@ namespace DAHP.Prototype
 
         }
 
-        private void frmQueryTerminal_Load(object sender, EventArgs e)
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
         {
 
         }

@@ -17,9 +17,14 @@ namespace DAHP.Prototype
             InitializeComponent();
         }
 
-        private void frmNewPromotion_Load(object sender, EventArgs e)
+        private void frmNewDesignation_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

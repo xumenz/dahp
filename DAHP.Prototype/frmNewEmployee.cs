@@ -152,5 +152,25 @@ namespace DAHP.Prototype
 
         }
 
+        private void txtSurname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LGA_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tpContactPhones_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
