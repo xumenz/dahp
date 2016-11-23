@@ -52,7 +52,8 @@
             this.administrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.qualificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employmenHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchEmploymentHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.payrolManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salaryAllowanceGridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salaryGridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -156,10 +157,12 @@
             this.queryTerminalToolStripMenuItem,
             this.departmentUnitToolStripMenuItem,
             this.qualificationToolStripMenuItem,
-            this.searchEmployeeToolStripMenuItem});
+            this.employmenHistoryToolStripMenuItem,
+            this.searchEmploymentHistoryToolStripMenuItem});
             this.hrToolStripMenuItem.Name = "hrToolStripMenuItem";
             this.hrToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
             this.hrToolStripMenuItem.Text = "HR Management";
+            this.hrToolStripMenuItem.Click += new System.EventHandler(this.hrToolStripMenuItem_Click);
             // 
             // employeeManagementToolStripMenuItem
             // 
@@ -251,12 +254,19 @@
             this.qualificationToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.qualificationToolStripMenuItem.Text = "Qualification";
             // 
-            // searchEmployeeToolStripMenuItem
+            // employmenHistoryToolStripMenuItem
             // 
-            this.searchEmployeeToolStripMenuItem.Name = "searchEmployeeToolStripMenuItem";
-            this.searchEmployeeToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
-            this.searchEmployeeToolStripMenuItem.Text = "Search Employee";
-            this.searchEmployeeToolStripMenuItem.Click += new System.EventHandler(this.searchEmployeeToolStripMenuItem_Click);
+            this.employmenHistoryToolStripMenuItem.Name = "employmenHistoryToolStripMenuItem";
+            this.employmenHistoryToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.employmenHistoryToolStripMenuItem.Text = "Employmen History";
+            this.employmenHistoryToolStripMenuItem.Click += new System.EventHandler(this.employmenHistoryToolStripMenuItem_Click);
+            // 
+            // searchEmploymentHistoryToolStripMenuItem
+            // 
+            this.searchEmploymentHistoryToolStripMenuItem.Name = "searchEmploymentHistoryToolStripMenuItem";
+            this.searchEmploymentHistoryToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.searchEmploymentHistoryToolStripMenuItem.Text = "Search Employment History";
+            this.searchEmploymentHistoryToolStripMenuItem.Click += new System.EventHandler(this.searchEmploymentHistoryToolStripMenuItem_Click);
             // 
             // payrolManagementToolStripMenuItem
             // 
@@ -387,7 +397,8 @@
         private System.Windows.Forms.ToolStripMenuItem accountsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iTToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchEmployeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employmenHistoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchEmploymentHistoryToolStripMenuItem;
     }
 }
 

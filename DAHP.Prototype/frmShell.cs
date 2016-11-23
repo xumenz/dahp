@@ -40,7 +40,7 @@ namespace DAHP.Prototype
 
         private void newQualificationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //frmNewQualification frm = new frmNewQualification ();
+            //frmNewQualification frm = new frmNewQualification();
             //frm.ShowDialog();
         }
 
@@ -75,9 +75,21 @@ namespace DAHP.Prototype
             frm.Show();
         }
 
-        private void searchEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void hrToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmSearchEmployee frm = new frmSearchEmployee();
+
+        }
+
+        private void employmenHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEmploymentHistory frm = new frmEmploymentHistory();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void searchEmploymentHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSearchEmploymentHistory frm = new frmSearchEmploymentHistory();
             frm.MdiParent = this;
             frm.Show();
         }

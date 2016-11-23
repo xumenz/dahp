@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,23 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCategoryReduction.cs">
+    <Compile Include="frmEmploymentHistory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCategoryReduction.Designer.cs">
-      <DependentUpon>frmCategoryReduction.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEmployeePaymentSchedule.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEmployeePaymentSchedule.Designer.cs">
-      <DependentUpon>frmEmployeePaymentSchedule.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmJobHistory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmJobHistory.Designer.cs">
-      <DependentUpon>frmJobHistory.cs</DependentUpon>
+    <Compile Include="frmEmploymentHistory.Designer.cs">
+      <DependentUpon>frmEmploymentHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQualifications.cs">
       <SubType>Form</SubType>
@@ -75,11 +65,11 @@
     <Compile Include="frmQueryTerminal.Designer.cs">
       <DependentUpon>frmQueryTerminal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSearchEmployee.cs">
+    <Compile Include="frmSearchEmploymentHistory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSearchEmployee.Designer.cs">
-      <DependentUpon>frmSearchEmployee.cs</DependentUpon>
+    <Compile Include="frmSearchEmploymentHistory.Designer.cs">
+      <DependentUpon>frmSearchEmploymentHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="frmState.cs">
       <SubType>Form</SubType>
@@ -98,12 +88,6 @@
     </Compile>
     <Compile Include="frmDepartment.Designer.cs">
       <DependentUpon>frmDepartment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSalarayAndAllowance.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSalarayAndAllowance.Designer.cs">
-      <DependentUpon>frmSalarayAndAllowance.cs</DependentUpon>
     </Compile>
     <Compile Include="frmStateAndLocal.cs">
       <SubType>Form</SubType>
@@ -153,16 +137,16 @@
     <Compile Include="frmNewEmployee.Designer.cs">
       <DependentUpon>frmNewEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Payroll Managemaent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll Managemaent.Designer.cs">
+      <DependentUpon>Payroll Managemaent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCategoryReduction.resx">
-      <DependentUpon>frmCategoryReduction.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEmployeePaymentSchedule.resx">
-      <DependentUpon>frmEmployeePaymentSchedule.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmJobHistory.resx">
-      <DependentUpon>frmJobHistory.cs</DependentUpon>
+    <EmbeddedResource Include="frmEmploymentHistory.resx">
+      <DependentUpon>frmEmploymentHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQualifications.resx">
       <DependentUpon>frmQualifications.cs</DependentUpon>
@@ -170,8 +154,8 @@
     <EmbeddedResource Include="frmQueryTerminal.resx">
       <DependentUpon>frmQueryTerminal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSearchEmployee.resx">
-      <DependentUpon>frmSearchEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="frmSearchEmploymentHistory.resx">
+      <DependentUpon>frmSearchEmploymentHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmState.resx">
       <DependentUpon>frmState.cs</DependentUpon>
@@ -181,9 +165,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDepartment.resx">
       <DependentUpon>frmDepartment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSalarayAndAllowance.resx">
-      <DependentUpon>frmSalarayAndAllowance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStateAndLocal.resx">
       <DependentUpon>frmStateAndLocal.cs</DependentUpon>
@@ -208,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewEmployee.resx">
       <DependentUpon>frmNewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll Managemaent.resx">
+      <DependentUpon>Payroll Managemaent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
