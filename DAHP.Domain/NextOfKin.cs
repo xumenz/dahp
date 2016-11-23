@@ -16,6 +16,5 @@ namespace DAHP.Domain
         public string Phonenumber { get; set; }
         public string ContactAddress { get; set; }
         public DateTime DateOfBirth { get; set; }
-
     }
 }
