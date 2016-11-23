@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bonus.cs" />
     <Compile Include="ContactInfo.cs" />
     <Compile Include="ContactPhones.cs" />
     <Compile Include="Designation.cs" />
@@ -48,6 +49,7 @@
     <Compile Include="EmploymentInfo.cs" />
     <Compile Include="JobHistory.cs" />
     <Compile Include="LGA.cs" />
+    <Compile Include="PaymentSchedule.cs" />
     <Compile Include="PersonalInfo.cs" />
     <Compile Include="NextOfKin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
