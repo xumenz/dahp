@@ -101,6 +101,12 @@
     <Compile Include="frmLga.Designer.cs">
       <DependentUpon>frmLga.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEmployeeSalaryStructure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeSalaryStructure.Designer.cs">
+      <DependentUpon>frmEmployeeSalaryStructure.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUnit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLga.resx">
       <DependentUpon>frmLga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeSalaryStructure.resx">
+      <DependentUpon>frmEmployeeSalaryStructure.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUnit.resx">
       <DependentUpon>frmUnit.cs</DependentUpon>

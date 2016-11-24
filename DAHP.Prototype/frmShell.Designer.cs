@@ -64,6 +64,7 @@
             this.databaseBackupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataConnectionConfigurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.employmentSalaryStructureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -273,10 +274,11 @@
             this.payrolManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.salaryAllowanceGridToolStripMenuItem,
             this.payScheduleToolStripMenuItem,
-            this.payCategoryToolStripMenuItem});
+            this.payCategoryToolStripMenuItem,
+            this.employmentSalaryStructureToolStripMenuItem});
             this.payrolManagementToolStripMenuItem.Name = "payrolManagementToolStripMenuItem";
-            this.payrolManagementToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
-            this.payrolManagementToolStripMenuItem.Text = "Payrol Management";
+            this.payrolManagementToolStripMenuItem.Size = new System.Drawing.Size(129, 20);
+            this.payrolManagementToolStripMenuItem.Text = "Payroll Management";
             // 
             // salaryAllowanceGridToolStripMenuItem
             // 
@@ -286,6 +288,7 @@
             this.salaryAllowanceGridToolStripMenuItem.Name = "salaryAllowanceGridToolStripMenuItem";
             this.salaryAllowanceGridToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.salaryAllowanceGridToolStripMenuItem.Text = "Salary/Allowance Grid";
+            this.salaryAllowanceGridToolStripMenuItem.Click += new System.EventHandler(this.salaryAllowanceGridToolStripMenuItem_Click);
             // 
             // salaryGridToolStripMenuItem
             // 
@@ -339,6 +342,13 @@
             this.statusStrip1.Size = new System.Drawing.Size(984, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // employmentSalaryStructureToolStripMenuItem
+            // 
+            this.employmentSalaryStructureToolStripMenuItem.Name = "employmentSalaryStructureToolStripMenuItem";
+            this.employmentSalaryStructureToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.employmentSalaryStructureToolStripMenuItem.Text = "Employee Salary Structure";
+            this.employmentSalaryStructureToolStripMenuItem.Click += new System.EventHandler(this.employmentSalaryStructureToolStripMenuItem_Click);
             // 
             // frmShell
             // 
@@ -398,6 +408,7 @@
         private System.Windows.Forms.ToolStripMenuItem administrationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employmenHistoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchEmploymentHistoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employmentSalaryStructureToolStripMenuItem;
     }
 }
 

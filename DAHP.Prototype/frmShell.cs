@@ -94,6 +94,18 @@ namespace DAHP.Prototype
             frm.Show();
         }
 
+        private void salaryAllowanceGridToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employmentSalaryStructureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEmployeeSalaryStructure frm = new frmEmployeeSalaryStructure();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
         //private void searchEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
         //{
         //    frmSearchEmployee frm = new frmSearchEmployee();
