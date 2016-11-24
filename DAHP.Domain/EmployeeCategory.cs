@@ -8,7 +8,6 @@ namespace DAHP.Domain
 {
     public class EmployeeCategory
     {
-        public Guid EmployeeCategoryId { get; set; }
         public string CategoryName { get; set; }
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class Designation
+    public class Department
     {
-        public string DesignationName { get; set; }
+        public string DepartmentName { get; set; }
     }
 }

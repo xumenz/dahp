@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class Designation
+    public class DepartmentHeadHistory
     {
-        public string DesignationName { get; set; }
+        
+        public Guid EmploymentInfoId { get; set; }
     }
 }

@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class Designation
+    public class CategoryDeduction
     {
-        public string DesignationName { get; set; }
+        
+        public DateTime DeductionDate { get; set; }
+        public double DeductionAmount { get; set; }
     }
 }

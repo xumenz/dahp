@@ -8,7 +8,6 @@ namespace DAHP.Domain
 {
     public class LGA
     {
-        public Guid lgaId { get; set; }
         public string LocalGovernmentName { get; set; }
         public Guid State { get; set; }
 

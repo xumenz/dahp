@@ -42,10 +42,16 @@
   <ItemGroup>
     <Compile Include="BaseEntity.cs" />
     <Compile Include="Bonus.cs" />
+    <Compile Include="CategoryBonus.cs" />
+    <Compile Include="CategoryDeduction.cs" />
     <Compile Include="ContactInfo.cs" />
     <Compile Include="ContactPhones.cs" />
+    <Compile Include="Department.cs" />
+    <Compile Include="DepartmentHeadHistory.cs" />
     <Compile Include="Designation.cs" />
+    <Compile Include="Education.cs" />
     <Compile Include="EmployeeCategory.cs" />
+    <Compile Include="EmployeeSalaryInfo.cs" />
     <Compile Include="EmployeeType.cs" />
     <Compile Include="EmploymentHistory.cs" />
     <Compile Include="EmploymentInfo.cs" />

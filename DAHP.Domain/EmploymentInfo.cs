@@ -8,7 +8,6 @@ namespace DAHP.Domain
 {
     public class EmploymentInfo
     { 
-        public Guid Id { get; set; }
         public Guid PersonId { get; set; }
         public Person Person { get; set; }
         public EmployeeType EmploymentType { get; set; }

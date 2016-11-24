@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class Designation
+    public class CategoryBonus
     {
-        public string DesignationName { get; set; }
+       
+        public string BonusDescription { get; set; }
+        public  double BonusAmount { get; set; }
     }
 }

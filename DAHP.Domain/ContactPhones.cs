@@ -8,7 +8,6 @@ namespace DAHP.Domain
 {
     public class ContactPhone : BaseEntity
     {
-        public Guid ContactPhoneId { get; set; }
         public Guid PersonId { get; set; }
         public string Phonenumber { get; set; }
     }

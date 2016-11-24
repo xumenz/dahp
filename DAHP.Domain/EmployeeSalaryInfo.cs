@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class Bonus : BaseEntity
+    public class EmployeeSalaryInfo
     {
-        
-        public string Description { get; set; }
+        public Guid LevelDetailId { get; set; }
+        public int Level { get; set; }
         public double Amount { get; set; }
     }
 }

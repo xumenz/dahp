@@ -8,7 +8,6 @@ namespace DAHP.Domain
 {
     public class NextOfKin
     {
-        public Guid NextOfKinId { get; set; } 
         public Guid PersonId { get; set; }
         public string Firstname { get; set; }
         public string Surname { get; set; }
