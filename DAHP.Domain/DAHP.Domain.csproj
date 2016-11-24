@@ -50,7 +50,6 @@
     <Compile Include="JobHistory.cs" />
     <Compile Include="LGA.cs" />
     <Compile Include="PaymentSchedule.cs" />
-    <Compile Include="PersonalInfo.cs" />
     <Compile Include="NextOfKin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query.cs" />
