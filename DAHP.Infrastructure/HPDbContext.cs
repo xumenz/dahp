@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAHP.Domain;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -13,6 +14,9 @@ namespace DAHP.Infrastructure
         {
 
         }
+
+
+        public DbSet<Person> Persons { get; set; }
 
 
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class ContactInfo
+    public class ContactInfo : BaseEntity
     {
         public Guid PersonId { get; set; }
         public Guid ContactId { get; set; }

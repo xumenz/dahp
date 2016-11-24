@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace DAHP.Prototype
 {
-    public partial class frmLga : Form
+    public partial class frmEmployeeCategory : Form
     {
-        public frmLga()
+        public frmEmployeeCategory()
         {
             InitializeComponent();
         }
 
-        private void frmLga_Load(object sender, EventArgs e)
+        private void frmNewDesignation_Load(object sender, EventArgs e)
         {
 
         }

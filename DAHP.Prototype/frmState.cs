@@ -17,7 +17,7 @@ namespace DAHP.Prototype
             InitializeComponent();
         }
 
-        private void frmNewDesignation_Load(object sender, EventArgs e)
+        private void frmState_Load(object sender, EventArgs e)
         {
 
         }

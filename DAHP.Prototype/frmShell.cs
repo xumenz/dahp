@@ -40,8 +40,8 @@ namespace DAHP.Prototype
 
         private void newQualificationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //frmNewQualification frm = new frmNewQualification();
-            //frm.ShowDialog();
+            frmQualifications frm = new frmQualifications ();
+            frm.ShowDialog();
         }
 
         private void newQueryToolStripMenuItem_Click(object sender, EventArgs e)
@@ -71,32 +71,6 @@ namespace DAHP.Prototype
         private void stateAndLGAManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmStateAndLocal frm = new frmStateAndLocal();
-            frm.MdiParent = this;
-            frm.Show();
-        }
-
-        private void hrToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void employmenHistoryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmEmploymentHistory frm = new frmEmploymentHistory();
-            frm.MdiParent = this;
-            frm.Show();
-        }
-
-        private void searchEmploymentHistoryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmSearchEmploymentHistory frm = new frmSearchEmploymentHistory();
-            frm.MdiParent = this;
-            frm.Show();
-        }
-
-        private void salaryAllowanceGridToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmSalarayAndAllowance frm = new frmSalarayAndAllowance();
             frm.MdiParent = this;
             frm.Show();
         }
