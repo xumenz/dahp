@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DAHP.Prototype
 {
-    public partial class frmBonusCalculator : Form
+    public partial class frmAddNewBonus : Form
     {
-        public frmBonusCalculator()
+        public frmAddNewBonus()
         {
             InitializeComponent();
         }

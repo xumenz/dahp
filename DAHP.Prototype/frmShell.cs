@@ -52,7 +52,7 @@ namespace DAHP.Prototype
 
         private void newDesignationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmNewDesignation frm = new frmNewDesignation();
+            frmBonusManagement frm = new frmBonusManagement();
             frm.MdiParent = this;
             frm.Show();
         }

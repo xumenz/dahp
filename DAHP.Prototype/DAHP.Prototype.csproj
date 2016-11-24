@@ -75,6 +75,18 @@
     <Compile Include="frmJobHistory.Designer.cs">
       <DependentUpon>frmJobHistory.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBonusManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBonusManagement.Designer.cs">
+      <DependentUpon>frmBonusManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBonusCalculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBonusCalculate.Designer.cs">
+      <DependentUpon>frmBonusCalculate.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNewPromotion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,12 @@
     <Compile Include="frmStateAndLocal.Designer.cs">
       <DependentUpon>frmStateAndLocal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNewBonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewBonus.Designer.cs">
+      <DependentUpon>frmNewBonus.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUnit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +224,12 @@
     <EmbeddedResource Include="frmJobHistory.resx">
       <DependentUpon>frmJobHistory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBonusManagement.resx">
+      <DependentUpon>frmBonusManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBonusCalculate.resx">
+      <DependentUpon>frmBonusCalculate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNewPromotion.resx">
       <DependentUpon>frmNewPromotion.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmStateAndLocal.resx">
       <DependentUpon>frmStateAndLocal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewBonus.resx">
+      <DependentUpon>frmNewBonus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUnit.resx">
       <DependentUpon>frmUnit.cs</DependentUpon>
