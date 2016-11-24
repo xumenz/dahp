@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class QueryGenerator
+    public class QueryGenerator : BaseEntity
     {
         public Guid QueryId { get; set; }
     }

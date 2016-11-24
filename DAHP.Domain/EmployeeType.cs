@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public enum EmployeeType
+    public enum EmployeeType    
     {
         Permanent = 1,
         Contract = 2,

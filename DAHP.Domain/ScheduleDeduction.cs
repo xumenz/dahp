@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class ScheduleDeduction
+    public class ScheduleDeduction : BaseEntity
     {
         public string Description { get; set; }
         public double DeductionAmount { get; set; }

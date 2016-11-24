@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class StateOfOrigin
+    public class StateOfOrigin : BaseEntity
     {
         public Guid StateId { get; set; }
         public string StateOfOrigin { get; set; }
