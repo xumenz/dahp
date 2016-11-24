@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class State
+    public class State : BaseEntity
     {
         public string State { get; set; }
     }

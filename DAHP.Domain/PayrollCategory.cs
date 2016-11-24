@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class PayrollCategory
+    public class PayrollCategory : BaseEntity
     {
-          public Guid EmplyeeTypeId { get; set; }
+          public Guid EmployeeTypeId { get; set; }
     }
 }

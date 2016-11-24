@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class EmploymentHistory
+    public class EmploymentHistory : BaseEntity
     {
         public Guid DesignationId { get; set; }
         public Guid EmploymentId { get; set; }

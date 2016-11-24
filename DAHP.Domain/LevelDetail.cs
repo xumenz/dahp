@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-   public class LevelDetail
+   public class LevelDetail : BaseEntity
     {
         public Guid Id { get; set; }
         public Guid GradeLevelId { get; set; }

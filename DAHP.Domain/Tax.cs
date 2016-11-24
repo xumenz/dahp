@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class Tax
+    public class Tax : BaseEntity
     {
         public int TaxId { get; set; }
     }

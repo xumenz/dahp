@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class CategoryDeduction
+    public class CategoryDeduction : BaseEntity
     {
         
         public DateTime DeductionDate { get; set; }

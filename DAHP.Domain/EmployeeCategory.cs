@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class EmployeeCategory
+    public class EmployeeCategory : BaseEntity
     {
         public string CategoryName { get; set; }
     }
