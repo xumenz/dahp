@@ -1,6 +1,6 @@
 ﻿namespace DAHP.Prototype
 {
-    partial class frmNewDesignation
+    partial class frmBonusManagement
     {
         /// <summary>
         /// Required designer variable.
