@@ -8,7 +8,6 @@ namespace DAHP.Domain
 {
     public class State
     {
-        public Guid StateId { get; set; }
         public string State { get; set; }
     }
 }

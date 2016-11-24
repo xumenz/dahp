@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class ContactInfo
+    public class ContactInfo : BaseEntity
     {
         public Guid PersonId { get; set; }
-        public Guid ContactId { get; set; }
         public string Address { get; set; }
         public string Email { get; set; }
         public AddressType AddressType { get; set; }

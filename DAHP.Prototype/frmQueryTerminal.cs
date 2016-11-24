@@ -36,5 +36,10 @@ namespace DAHP.Prototype
         {
 
         }
+
+        private void frmQueryTerminal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

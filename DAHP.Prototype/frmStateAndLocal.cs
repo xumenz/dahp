@@ -25,7 +25,7 @@ namespace DAHP.Prototype
 
         private void tsbNewLga_Click(object sender, EventArgs e)
         {
-            frmLga frm = new frmLga();
+            frmNewPromotion frm = new frmNewPromotion();
             frm.ShowDialog();
         }
     }

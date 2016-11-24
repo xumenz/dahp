@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class EmployeeType
+    public enum EmployeeType
     {
-        public string Permanent { get; set; }
-        public string Contract { get; set; }
-        public string Part_Time { get; set; }
-        public Guid EmployeeTypeId { get; set; }
-
+        Permanent = 1,
+        Contract = 2,
+        Part_Time= 3
+       
     }
 }

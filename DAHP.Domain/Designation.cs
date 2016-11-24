@@ -8,7 +8,6 @@ namespace DAHP.Domain
 {
     public class Designation
     {
-        public Guid DesignationId { get; set; }
         public string DesignationName { get; set; }
     }
 }

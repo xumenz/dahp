@@ -12,6 +12,7 @@ namespace DAHP.Domain
         public string QueryDetail { get; set; }
         public DateTime QueryDate { get; set; }
         public string ReasonForQuery { get; set; }
-        public Guid QueryId { get; set; }
+        
+
     }
 }
