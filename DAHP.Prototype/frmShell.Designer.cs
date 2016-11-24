@@ -52,6 +52,8 @@
             this.administrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.qualificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employmenHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchEmploymentHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.payrolManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salaryAllowanceGridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salaryGridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,7 +90,7 @@
             this.newUnitToolStripMenuItem,
             this.newQualificationToolStripMenuItem});
             this.taskToolStripMenuItem.Name = "taskToolStripMenuItem";
-            this.taskToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
+            this.taskToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.taskToolStripMenuItem.Text = "Task";
             this.taskToolStripMenuItem.Click += new System.EventHandler(this.taskToolStripMenuItem_Click);
             // 
@@ -154,10 +156,13 @@
             this.stateAndLGAManagementToolStripMenuItem,
             this.queryTerminalToolStripMenuItem,
             this.departmentUnitToolStripMenuItem,
-            this.qualificationToolStripMenuItem});
+            this.qualificationToolStripMenuItem,
+            this.employmenHistoryToolStripMenuItem,
+            this.searchEmploymentHistoryToolStripMenuItem});
             this.hrToolStripMenuItem.Name = "hrToolStripMenuItem";
             this.hrToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
             this.hrToolStripMenuItem.Text = "HR Management";
+            this.hrToolStripMenuItem.Click += new System.EventHandler(this.hrToolStripMenuItem_Click);
             // 
             // employeeManagementToolStripMenuItem
             // 
@@ -249,6 +254,20 @@
             this.qualificationToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.qualificationToolStripMenuItem.Text = "Qualification";
             // 
+            // employmenHistoryToolStripMenuItem
+            // 
+            this.employmenHistoryToolStripMenuItem.Name = "employmenHistoryToolStripMenuItem";
+            this.employmenHistoryToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.employmenHistoryToolStripMenuItem.Text = "Employmen History";
+            this.employmenHistoryToolStripMenuItem.Click += new System.EventHandler(this.employmenHistoryToolStripMenuItem_Click);
+            // 
+            // searchEmploymentHistoryToolStripMenuItem
+            // 
+            this.searchEmploymentHistoryToolStripMenuItem.Name = "searchEmploymentHistoryToolStripMenuItem";
+            this.searchEmploymentHistoryToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.searchEmploymentHistoryToolStripMenuItem.Text = "Search Employment History";
+            this.searchEmploymentHistoryToolStripMenuItem.Click += new System.EventHandler(this.searchEmploymentHistoryToolStripMenuItem_Click);
+            // 
             // payrolManagementToolStripMenuItem
             // 
             this.payrolManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -267,6 +286,7 @@
             this.salaryAllowanceGridToolStripMenuItem.Name = "salaryAllowanceGridToolStripMenuItem";
             this.salaryAllowanceGridToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.salaryAllowanceGridToolStripMenuItem.Text = "Salary/Allowance Grid";
+            this.salaryAllowanceGridToolStripMenuItem.Click += new System.EventHandler(this.salaryAllowanceGridToolStripMenuItem_Click);
             // 
             // salaryGridToolStripMenuItem
             // 
@@ -377,6 +397,8 @@
         private System.Windows.Forms.ToolStripMenuItem accountsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iTToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employmenHistoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchEmploymentHistoryToolStripMenuItem;
     }
 }
 

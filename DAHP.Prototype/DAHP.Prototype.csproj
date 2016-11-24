@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCategoryReduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoryReduction.Designer.cs">
+      <DependentUpon>frmCategoryReduction.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEmployeeCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCategoryReduction.resx">
+      <DependentUpon>frmCategoryReduction.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEmployeeCategory.resx">
       <DependentUpon>frmEmployeeCategory.cs</DependentUpon>
     </EmbeddedResource>
