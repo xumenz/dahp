@@ -94,11 +94,11 @@ namespace DAHP.Prototype
             frm.Show();
         }
 
-        //private void searchEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    frmSearchEmployee frm = new frmSearchEmployee();
-        //    frm.MdiParent = this;
-        //    frm.Show();
-        //}
+        private void salaryAllowanceGridToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSalarayAndAllowance frm = new frmSalarayAndAllowance();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

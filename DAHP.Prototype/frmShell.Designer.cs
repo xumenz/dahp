@@ -286,6 +286,7 @@
             this.salaryAllowanceGridToolStripMenuItem.Name = "salaryAllowanceGridToolStripMenuItem";
             this.salaryAllowanceGridToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.salaryAllowanceGridToolStripMenuItem.Text = "Salary/Allowance Grid";
+            this.salaryAllowanceGridToolStripMenuItem.Click += new System.EventHandler(this.salaryAllowanceGridToolStripMenuItem_Click);
             // 
             // salaryGridToolStripMenuItem
             // 
