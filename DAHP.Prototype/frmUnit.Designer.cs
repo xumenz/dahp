@@ -1,6 +1,6 @@
 ﻿namespace DAHP.Prototype
 {
-    partial class frmUnit
+    partial class frmBonusCalculator
     {
         /// <summary>
         /// Required designer variable.
