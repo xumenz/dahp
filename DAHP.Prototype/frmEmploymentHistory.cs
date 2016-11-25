@@ -12,6 +12,7 @@ namespace DAHP.Prototype
 {
     public partial class frmEmploymentHistory : Form
     {
+        //public bool Cancel = false;
         public frmEmploymentHistory()
         {
             InitializeComponent();
@@ -19,6 +20,14 @@ namespace DAHP.Prototype
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+          //  if (btnCancel = Click()
+          //  {
+          //      Console.WriteLine("Are you sure you want to Cancel");
+          //  }
+          //else
+          //  {
+                
+          //  }
             this.Close();
         }
 
@@ -44,12 +53,25 @@ namespace DAHP.Prototype
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-           
+
+            //frmEmploymentHistory Save = new frmEmploymentHistory();
+            //Save.
+
         }
 
         private void dtpEntry_ValueChanged(object sender, EventArgs e)
         {
-            DateTime DateofEntry = Convert.ToDateTime(dtpEntry);
+            DateTime StartDate = Convert.ToDateTime(dtpStartDate);
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime EndDate = Convert.ToDateTime(dtpEndDate);
         }
     }
 }

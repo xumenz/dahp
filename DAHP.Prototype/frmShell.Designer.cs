@@ -64,6 +64,7 @@
             this.databaseBackupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataConnectionConfigurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.employmentSalaryStructureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -273,10 +274,11 @@
             this.payrolManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.salaryAllowanceGridToolStripMenuItem,
             this.payScheduleToolStripMenuItem,
-            this.payCategoryToolStripMenuItem});
+            this.payCategoryToolStripMenuItem,
+            this.employmentSalaryStructureToolStripMenuItem});
             this.payrolManagementToolStripMenuItem.Name = "payrolManagementToolStripMenuItem";
-            this.payrolManagementToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
-            this.payrolManagementToolStripMenuItem.Text = "Payrol Management";
+            this.payrolManagementToolStripMenuItem.Size = new System.Drawing.Size(129, 20);
+            this.payrolManagementToolStripMenuItem.Text = "Payroll Management";
             // 
             // salaryAllowanceGridToolStripMenuItem
             // 
@@ -341,6 +343,13 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // employmentSalaryStructureToolStripMenuItem
+            // 
+            //this.employmentSalaryStructureToolStripMenuItem.Name = "employmentSalaryStructureToolStripMenuItem";
+            //this.employmentSalaryStructureToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            //this.employmentSalaryStructureToolStripMenuItem.Text = "Employee Salary Structure";
+            //this.employmentSalaryStructureToolStripMenuItem.Click += new System.EventHandler(this.employmentSalaryStructureToolStripMenuItem_Click);
+            // 
             // frmShell
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,6 +408,7 @@
         private System.Windows.Forms.ToolStripMenuItem administrationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employmenHistoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchEmploymentHistoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employmentSalaryStructureToolStripMenuItem;
     }
 }
 

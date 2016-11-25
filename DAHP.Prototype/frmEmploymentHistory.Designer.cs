@@ -32,7 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.dtpEntry = new System.Windows.Forms.DateTimePicker();
+            this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
             this.txtPreviousSalary = new System.Windows.Forms.TextBox();
             this.txtPreviousUnit = new System.Windows.Forms.TextBox();
             this.txtPreviousDepartment = new System.Windows.Forms.TextBox();
@@ -42,6 +42,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -52,15 +54,17 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(505, 340);
+            this.dataGridView1.Size = new System.Drawing.Size(506, 361);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.groupBox1.Controls.Add(this.dtpEndDate);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.btnCancel);
             this.groupBox1.Controls.Add(this.btnSave);
-            this.groupBox1.Controls.Add(this.dtpEntry);
+            this.groupBox1.Controls.Add(this.dtpStartDate);
             this.groupBox1.Controls.Add(this.txtPreviousSalary);
             this.groupBox1.Controls.Add(this.txtPreviousUnit);
             this.groupBox1.Controls.Add(this.txtPreviousDepartment);
@@ -75,14 +79,14 @@
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(505, 340);
+            this.groupBox1.Size = new System.Drawing.Size(506, 361);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Employment History";
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(397, 281);
+            this.btnCancel.Location = new System.Drawing.Point(397, 303);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 36);
             this.btnCancel.TabIndex = 11;
@@ -92,7 +96,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(293, 281);
+            this.btnSave.Location = new System.Drawing.Point(293, 303);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 36);
             this.btnSave.TabIndex = 10;
@@ -100,13 +104,13 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // dtpEntry
+            // dtpStartDate
             // 
-            this.dtpEntry.Location = new System.Drawing.Point(168, 213);
-            this.dtpEntry.Name = "dtpEntry";
-            this.dtpEntry.Size = new System.Drawing.Size(200, 21);
-            this.dtpEntry.TabIndex = 9;
-            this.dtpEntry.ValueChanged += new System.EventHandler(this.dtpEntry_ValueChanged);
+            this.dtpStartDate.Location = new System.Drawing.Point(168, 213);
+            this.dtpStartDate.Name = "dtpStartDate";
+            this.dtpStartDate.Size = new System.Drawing.Size(200, 21);
+            this.dtpStartDate.TabIndex = 9;
+            this.dtpStartDate.ValueChanged += new System.EventHandler(this.dtpEntry_ValueChanged);
             // 
             // txtPreviousSalary
             // 
@@ -145,9 +149,10 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(33, 219);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 15);
+            this.label5.Size = new System.Drawing.Size(61, 15);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Date of Entry";
+            this.label5.Text = "Start Date";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -185,15 +190,32 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee Name";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(32, 255);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 15);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "End Date";
+            // 
+            // dtpEndDate
+            // 
+            this.dtpEndDate.Location = new System.Drawing.Point(168, 255);
+            this.dtpEndDate.Name = "dtpEndDate";
+            this.dtpEndDate.Size = new System.Drawing.Size(200, 21);
+            this.dtpEndDate.TabIndex = 13;
+            this.dtpEndDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // frmEmploymentHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(505, 340);
+            this.ClientSize = new System.Drawing.Size(506, 361);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmEmploymentHistory";
-            this.Text = "frmEmploymentHistory";
+            this.Text = "Employment History";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -207,7 +229,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.DateTimePicker dtpEntry;
+        private System.Windows.Forms.DateTimePicker dtpStartDate;
         private System.Windows.Forms.TextBox txtPreviousSalary;
         private System.Windows.Forms.TextBox txtPreviousUnit;
         private System.Windows.Forms.TextBox txtPreviousDepartment;
@@ -217,5 +239,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dtpEndDate;
+        private System.Windows.Forms.Label label6;
     }
 }
