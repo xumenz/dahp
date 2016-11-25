@@ -345,10 +345,10 @@
             // 
             // employmentSalaryStructureToolStripMenuItem
             // 
-            this.employmentSalaryStructureToolStripMenuItem.Name = "employmentSalaryStructureToolStripMenuItem";
-            this.employmentSalaryStructureToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.employmentSalaryStructureToolStripMenuItem.Text = "Employee Salary Structure";
-            this.employmentSalaryStructureToolStripMenuItem.Click += new System.EventHandler(this.employmentSalaryStructureToolStripMenuItem_Click);
+            //this.employmentSalaryStructureToolStripMenuItem.Name = "employmentSalaryStructureToolStripMenuItem";
+            //this.employmentSalaryStructureToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            //this.employmentSalaryStructureToolStripMenuItem.Text = "Employee Salary Structure";
+            //this.employmentSalaryStructureToolStripMenuItem.Click += new System.EventHandler(this.employmentSalaryStructureToolStripMenuItem_Click);
             // 
             // frmShell
             // 

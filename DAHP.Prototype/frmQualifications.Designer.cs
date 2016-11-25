@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQualifications));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbQualification = new System.Windows.Forms.GroupBox();
             this.dgvQualifications = new System.Windows.Forms.DataGridView();
             this.bnQualifications = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -45,13 +45,13 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblAcronym = new System.Windows.Forms.Label();
             this.txtCode = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbQualification.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQualifications)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bnQualifications)).BeginInit();
             this.bnQualifications.SuspendLayout();
@@ -62,7 +62,7 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.gbQualification, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.bnQualifications, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -75,15 +75,15 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(415, 423);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // groupBox1
+            // gbQualification
             // 
-            this.groupBox1.Controls.Add(this.dgvQualifications);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(409, 287);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
+            this.gbQualification.Controls.Add(this.dgvQualifications);
+            this.gbQualification.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbQualification.Location = new System.Drawing.Point(3, 3);
+            this.gbQualification.Name = "gbQualification";
+            this.gbQualification.Size = new System.Drawing.Size(409, 287);
+            this.gbQualification.TabIndex = 0;
+            this.gbQualification.TabStop = false;
             // 
             // dgvQualifications
             // 
@@ -194,9 +194,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnCancel);
-            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.lblAcronym);
             this.groupBox2.Controls.Add(this.txtCode);
-            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.lblTitle);
             this.groupBox2.Controls.Add(this.txtTitle);
             this.groupBox2.Controls.Add(this.btnSave);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -216,14 +216,14 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // lblAcronym
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Acronym (Code)";
+            this.lblAcronym.AutoSize = true;
+            this.lblAcronym.Location = new System.Drawing.Point(4, 43);
+            this.lblAcronym.Name = "lblAcronym";
+            this.lblAcronym.Size = new System.Drawing.Size(87, 16);
+            this.lblAcronym.TabIndex = 4;
+            this.lblAcronym.Text = "Acronym (Code)";
             // 
             // txtCode
             // 
@@ -232,14 +232,14 @@
             this.txtCode.Size = new System.Drawing.Size(169, 20);
             this.txtCode.TabIndex = 3;
             // 
-            // label1
+            // lblTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Title";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Location = new System.Drawing.Point(6, 17);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(30, 16);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "Title";
             // 
             // txtTitle
             // 
@@ -272,7 +272,7 @@
             this.Text = "Qualifications";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            this.gbQualification.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQualifications)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bnQualifications)).EndInit();
             this.bnQualifications.ResumeLayout(false);
@@ -286,7 +286,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbQualification;
         private System.Windows.Forms.DataGridView dgvQualifications;
         private System.Windows.Forms.BindingNavigator bnQualifications;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -299,9 +299,9 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblAcronym;
         private System.Windows.Forms.TextBox txtCode;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;

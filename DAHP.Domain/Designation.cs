@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class Designation
+    public class Designation : BaseEntity
     {
-        public Guid DesignationId { get; set; }
         public string DesignationName { get; set; }
     }
 }

@@ -35,8 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.DirectoryServices" />
-    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,11 +45,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCategoryReduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoryReduction.Designer.cs">
+      <DependentUpon>frmCategoryReduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeCategory.Designer.cs">
+      <DependentUpon>frmEmployeeCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeePaymentSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeePaymentSchedule.Designer.cs">
+      <DependentUpon>frmEmployeePaymentSchedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEmploymentHistory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmEmploymentHistory.Designer.cs">
       <DependentUpon>frmEmploymentHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJobHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJobHistory.Designer.cs">
+      <DependentUpon>frmJobHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBonusManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBonusManagement.Designer.cs">
+      <DependentUpon>frmBonusManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBonusCalculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBonusCalculate.Designer.cs">
+      <DependentUpon>frmBonusCalculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewPromotion.Designer.cs">
+      <DependentUpon>frmNewPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentSchedules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentSchedules.Designer.cs">
+      <DependentUpon>frmPaymentSchedules.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQualifications.cs">
       <SubType>Form</SubType>
@@ -59,11 +105,35 @@
     <Compile Include="frmQualifications.Designer.cs">
       <DependentUpon>frmQualifications.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmploymentInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmploymentInformation.Designer.cs">
+      <DependentUpon>EmploymentInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQueryTerminal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmQueryTerminal.Designer.cs">
       <DependentUpon>frmQueryTerminal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLga.Designer.cs">
+      <DependentUpon>frmLga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalarayAndAllowance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalarayAndAllowance.Designer.cs">
+      <DependentUpon>frmSalarayAndAllowance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchEmployee.Designer.cs">
+      <DependentUpon>frmSearchEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSearchEmploymentHistory.cs">
       <SubType>Form</SubType>
@@ -95,11 +165,11 @@
     <Compile Include="frmStateAndLocal.Designer.cs">
       <DependentUpon>frmStateAndLocal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLga.cs">
+    <Compile Include="frmNewBonus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLga.Designer.cs">
-      <DependentUpon>frmLga.cs</DependentUpon>
+    <Compile Include="frmNewBonus.Designer.cs">
+      <DependentUpon>frmNewBonus.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmployeeSalaryStructure.cs">
       <SubType>Form</SubType>
@@ -118,12 +188,6 @@
     </Compile>
     <Compile Include="frmNewDesignation.Designer.cs">
       <DependentUpon>frmNewDesignation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmNewPromotion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmNewPromotion.Designer.cs">
-      <DependentUpon>frmNewPromotion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmNewQuery.cs">
       <SubType>Form</SubType>
@@ -151,14 +215,50 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCategoryReduction.resx">
+      <DependentUpon>frmCategoryReduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeCategory.resx">
+      <DependentUpon>frmEmployeeCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeePaymentSchedule.resx">
+      <DependentUpon>frmEmployeePaymentSchedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEmploymentHistory.resx">
       <DependentUpon>frmEmploymentHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJobHistory.resx">
+      <DependentUpon>frmJobHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBonusManagement.resx">
+      <DependentUpon>frmBonusManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBonusCalculate.resx">
+      <DependentUpon>frmBonusCalculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewPromotion.resx">
+      <DependentUpon>frmNewPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentSchedules.resx">
+      <DependentUpon>frmPaymentSchedules.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQualifications.resx">
       <DependentUpon>frmQualifications.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmploymentInformation.resx">
+      <DependentUpon>EmploymentInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQueryTerminal.resx">
       <DependentUpon>frmQueryTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLga.resx">
+      <DependentUpon>frmLga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalarayAndAllowance.resx">
+      <DependentUpon>frmSalarayAndAllowance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchEmployee.resx">
+      <DependentUpon>frmSearchEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSearchEmploymentHistory.resx">
       <DependentUpon>frmSearchEmploymentHistory.cs</DependentUpon>
@@ -175,8 +275,8 @@
     <EmbeddedResource Include="frmStateAndLocal.resx">
       <DependentUpon>frmStateAndLocal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLga.resx">
-      <DependentUpon>frmLga.cs</DependentUpon>
+    <EmbeddedResource Include="frmNewBonus.resx">
+      <DependentUpon>frmNewBonus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmployeeSalaryStructure.resx">
       <DependentUpon>frmEmployeeSalaryStructure.cs</DependentUpon>
@@ -186,9 +286,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewDesignation.resx">
       <DependentUpon>frmNewDesignation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNewPromotion.resx">
-      <DependentUpon>frmNewPromotion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewQuery.resx">
       <DependentUpon>frmNewQuery.cs</DependentUpon>

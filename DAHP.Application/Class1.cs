@@ -8,5 +8,6 @@ namespace DAHP.Application
 {
     public class Class1
     {
+        
     }
 }

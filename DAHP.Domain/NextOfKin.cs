@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class NextOfKin
+    public class NextOfKin : BaseEntity
     {
-        public Guid NextOfKinId { get; set; } 
         public Guid PersonId { get; set; }
         public string Firstname { get; set; }
         public string Surname { get; set; }

@@ -31,63 +31,63 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQueryTerminal));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblDepartment = new System.Windows.Forms.Label();
+            this.lblDesig = new System.Windows.Forms.Label();
+            this.lblOtherName = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblFirstname = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.lblDeSignation = new System.Windows.Forms.Label();
+            this.lblDept = new System.Windows.Forms.Label();
+            this.lblOName = new System.Windows.Forms.Label();
+            this.lblSname = new System.Windows.Forms.Label();
+            this.lblFname = new System.Windows.Forms.Label();
+            this.gbQueryDetails = new System.Windows.Forms.GroupBox();
+            this.cmbQueriedBy = new System.Windows.Forms.ComboBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
+            this.lblQueriedBy = new System.Windows.Forms.Label();
+            this.lblReason = new System.Windows.Forms.Label();
+            this.txtReason = new System.Windows.Forms.TextBox();
+            this.lblDetail = new System.Windows.Forms.Label();
+            this.txtDetail = new System.Windows.Forms.TextBox();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblSubject = new System.Windows.Forms.Label();
+            this.txtSubject = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvQueries = new System.Windows.Forms.DataGridView();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bnTerminal = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbQueryDetails.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQueries)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bnTerminal)).BeginInit();
+            this.bnTerminal.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.lblDepartment);
+            this.groupBox1.Controls.Add(this.lblDesig);
+            this.groupBox1.Controls.Add(this.lblOtherName);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.lblFirstname);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblDeSignation);
+            this.groupBox1.Controls.Add(this.lblDept);
+            this.groupBox1.Controls.Add(this.lblOName);
+            this.groupBox1.Controls.Add(this.lblSname);
+            this.groupBox1.Controls.Add(this.lblFname);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(181, 3);
@@ -97,32 +97,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Employee Details";
             // 
-            // label14
+            // lblDepartment
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(98, 105);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(78, 18);
-            this.label14.TabIndex = 14;
-            this.label14.Text = "**************";
+            this.lblDepartment.AutoSize = true;
+            this.lblDepartment.Location = new System.Drawing.Point(98, 105);
+            this.lblDepartment.Name = "lblDepartment";
+            this.lblDepartment.Size = new System.Drawing.Size(78, 18);
+            this.lblDepartment.TabIndex = 14;
+            this.lblDepartment.Text = "**************";
             // 
-            // label13
+            // lblDesig
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(353, 105);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(78, 18);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "**************";
+            this.lblDesig.AutoSize = true;
+            this.lblDesig.Location = new System.Drawing.Point(353, 105);
+            this.lblDesig.Name = "lblDesig";
+            this.lblDesig.Size = new System.Drawing.Size(78, 18);
+            this.lblDesig.TabIndex = 13;
+            this.lblDesig.Text = "**************";
             // 
-            // label12
+            // lblOtherName
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(98, 62);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(78, 18);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "**************";
+            this.lblOtherName.AutoSize = true;
+            this.lblOtherName.Location = new System.Drawing.Point(98, 62);
+            this.lblOtherName.Name = "lblOtherName";
+            this.lblOtherName.Size = new System.Drawing.Size(78, 18);
+            this.lblOtherName.TabIndex = 12;
+            this.lblOtherName.Text = "**************";
             // 
             // label11
             // 
@@ -142,176 +142,176 @@
             this.lblFirstname.TabIndex = 10;
             this.lblFirstname.Text = "**************";
             // 
-            // label5
+            // lblDeSignation
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(265, 105);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 18);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Designation:";
+            this.lblDeSignation.AutoSize = true;
+            this.lblDeSignation.Location = new System.Drawing.Point(265, 105);
+            this.lblDeSignation.Name = "lblDeSignation";
+            this.lblDeSignation.Size = new System.Drawing.Size(82, 18);
+            this.lblDeSignation.TabIndex = 9;
+            this.lblDeSignation.Text = "Designation:";
             // 
-            // label4
+            // lblDept
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 105);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 18);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Department:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lblDept.AutoSize = true;
+            this.lblDept.Location = new System.Drawing.Point(9, 105);
+            this.lblDept.Name = "lblDept";
+            this.lblDept.Size = new System.Drawing.Size(82, 18);
+            this.lblDept.TabIndex = 7;
+            this.lblDept.Text = "Department:";
+            this.lblDept.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label3
+            // lblOName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 18);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Other Name:";
+            this.lblOName.AutoSize = true;
+            this.lblOName.Location = new System.Drawing.Point(9, 62);
+            this.lblOName.Name = "lblOName";
+            this.lblOName.Size = new System.Drawing.Size(83, 18);
+            this.lblOName.TabIndex = 5;
+            this.lblOName.Text = "Other Name:";
             // 
-            // label2
+            // lblSname
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(265, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Surname:";
+            this.lblSname.AutoSize = true;
+            this.lblSname.Location = new System.Drawing.Point(265, 28);
+            this.lblSname.Name = "lblSname";
+            this.lblSname.Size = new System.Drawing.Size(64, 18);
+            this.lblSname.TabIndex = 3;
+            this.lblSname.Text = "Surname:";
             // 
-            // label1
+            // lblFname
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "First Name:";
+            this.lblFname.AutoSize = true;
+            this.lblFname.Location = new System.Drawing.Point(9, 28);
+            this.lblFname.Name = "lblFname";
+            this.lblFname.Size = new System.Drawing.Size(77, 18);
+            this.lblFname.TabIndex = 1;
+            this.lblFname.Text = "First Name:";
             // 
-            // groupBox2
+            // gbQueryDetails
             // 
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(181, 135);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(538, 298);
-            this.groupBox2.TabIndex = 10;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Query Details";
+            this.gbQueryDetails.Controls.Add(this.cmbQueriedBy);
+            this.gbQueryDetails.Controls.Add(this.btnCancel);
+            this.gbQueryDetails.Controls.Add(this.btnSave);
+            this.gbQueryDetails.Controls.Add(this.dtpDate);
+            this.gbQueryDetails.Controls.Add(this.lblQueriedBy);
+            this.gbQueryDetails.Controls.Add(this.lblReason);
+            this.gbQueryDetails.Controls.Add(this.txtReason);
+            this.gbQueryDetails.Controls.Add(this.lblDetail);
+            this.gbQueryDetails.Controls.Add(this.txtDetail);
+            this.gbQueryDetails.Controls.Add(this.lblDate);
+            this.gbQueryDetails.Controls.Add(this.lblSubject);
+            this.gbQueryDetails.Controls.Add(this.txtSubject);
+            this.gbQueryDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbQueryDetails.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbQueryDetails.Location = new System.Drawing.Point(181, 135);
+            this.gbQueryDetails.Name = "gbQueryDetails";
+            this.gbQueryDetails.Size = new System.Drawing.Size(538, 298);
+            this.gbQueryDetails.TabIndex = 10;
+            this.gbQueryDetails.TabStop = false;
+            this.gbQueryDetails.Text = "Query Details";
             // 
-            // comboBox1
+            // cmbQueriedBy
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(314, 228);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(205, 26);
-            this.comboBox1.TabIndex = 13;
+            this.cmbQueriedBy.FormattingEnabled = true;
+            this.cmbQueriedBy.Location = new System.Drawing.Point(314, 228);
+            this.cmbQueriedBy.Name = "cmbQueriedBy";
+            this.cmbQueriedBy.Size = new System.Drawing.Size(205, 26);
+            this.cmbQueriedBy.TabIndex = 13;
             // 
-            // button2
+            // btnCancel
             // 
-            this.button2.Location = new System.Drawing.Point(444, 272);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 32);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnCancel.Location = new System.Drawing.Point(444, 272);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 32);
+            this.btnCancel.TabIndex = 12;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.Location = new System.Drawing.Point(363, 272);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 32);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSave.Location = new System.Drawing.Point(363, 272);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 32);
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtpDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(366, 22);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(153, 23);
-            this.dateTimePicker1.TabIndex = 10;
+            this.dtpDate.Location = new System.Drawing.Point(366, 22);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(153, 23);
+            this.dtpDate.TabIndex = 10;
             // 
-            // label6
+            // lblQueriedBy
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(232, 236);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 18);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Queried By:";
+            this.lblQueriedBy.AutoSize = true;
+            this.lblQueriedBy.Location = new System.Drawing.Point(232, 236);
+            this.lblQueriedBy.Name = "lblQueriedBy";
+            this.lblQueriedBy.Size = new System.Drawing.Size(76, 18);
+            this.lblQueriedBy.TabIndex = 9;
+            this.lblQueriedBy.Text = "Queried By:";
             // 
-            // label7
+            // lblReason
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 236);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 18);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Reason:";
+            this.lblReason.AutoSize = true;
+            this.lblReason.Location = new System.Drawing.Point(9, 236);
+            this.lblReason.Name = "lblReason";
+            this.lblReason.Size = new System.Drawing.Size(54, 18);
+            this.lblReason.TabIndex = 7;
+            this.lblReason.Text = "Reason:";
             // 
-            // textBox7
+            // txtReason
             // 
-            this.textBox7.Location = new System.Drawing.Point(69, 236);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(157, 23);
-            this.textBox7.TabIndex = 6;
+            this.txtReason.Location = new System.Drawing.Point(69, 236);
+            this.txtReason.Multiline = true;
+            this.txtReason.Name = "txtReason";
+            this.txtReason.Size = new System.Drawing.Size(157, 23);
+            this.txtReason.TabIndex = 6;
             // 
-            // label8
+            // lblDetail
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 59);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 18);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Detail:";
+            this.lblDetail.AutoSize = true;
+            this.lblDetail.Location = new System.Drawing.Point(9, 59);
+            this.lblDetail.Name = "lblDetail";
+            this.lblDetail.Size = new System.Drawing.Size(47, 18);
+            this.lblDetail.TabIndex = 5;
+            this.lblDetail.Text = "Detail:";
             // 
-            // textBox8
+            // txtDetail
             // 
-            this.textBox8.Location = new System.Drawing.Point(72, 59);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(447, 163);
-            this.textBox8.TabIndex = 4;
+            this.txtDetail.Location = new System.Drawing.Point(72, 59);
+            this.txtDetail.Multiline = true;
+            this.txtDetail.Name = "txtDetail";
+            this.txtDetail.Size = new System.Drawing.Size(447, 163);
+            this.txtDetail.TabIndex = 4;
             // 
-            // label9
+            // lblDate
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(326, 22);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(40, 18);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Date:";
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(326, 22);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(40, 18);
+            this.lblDate.TabIndex = 3;
+            this.lblDate.Text = "Date:";
             // 
-            // label10
+            // lblSubject
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(9, 26);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(57, 18);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Subject:";
+            this.lblSubject.AutoSize = true;
+            this.lblSubject.Location = new System.Drawing.Point(9, 26);
+            this.lblSubject.Name = "lblSubject";
+            this.lblSubject.Size = new System.Drawing.Size(57, 18);
+            this.lblSubject.TabIndex = 1;
+            this.lblSubject.Text = "Subject:";
             // 
-            // textBox10
+            // txtSubject
             // 
-            this.textBox10.Location = new System.Drawing.Point(72, 23);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(221, 23);
-            this.textBox10.TabIndex = 0;
+            this.txtSubject.Location = new System.Drawing.Point(72, 23);
+            this.txtSubject.Name = "txtSubject";
+            this.txtSubject.Size = new System.Drawing.Size(221, 23);
+            this.txtSubject.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -319,9 +319,9 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 178F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.groupBox2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.gbQueryDetails, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.groupBox3, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.bindingNavigator1, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.bnTerminal, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -357,13 +357,13 @@
             this.dgvQueries.Size = new System.Drawing.Size(166, 411);
             this.dgvQueries.TabIndex = 0;
             // 
-            // bindingNavigator1
+            // bnTerminal
             // 
-            this.bindingNavigator1.AddNewItem = null;
-            this.tableLayoutPanel1.SetColumnSpan(this.bindingNavigator1, 2);
-            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
-            this.bindingNavigator1.DeleteItem = null;
-            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bnTerminal.AddNewItem = null;
+            this.tableLayoutPanel1.SetColumnSpan(this.bnTerminal, 2);
+            this.bnTerminal.CountItem = this.bindingNavigatorCountItem;
+            this.bnTerminal.DeleteItem = null;
+            this.bnTerminal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -373,16 +373,23 @@
             this.bindingNavigatorMoveNextItem,
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2});
-            this.bindingNavigator1.Location = new System.Drawing.Point(0, 436);
-            this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(722, 21);
-            this.bindingNavigator1.TabIndex = 12;
-            this.bindingNavigator1.Text = "bindingNavigator1";
+            this.bnTerminal.Location = new System.Drawing.Point(0, 436);
+            this.bnTerminal.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.bnTerminal.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.bnTerminal.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.bnTerminal.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.bnTerminal.Name = "bnTerminal";
+            this.bnTerminal.PositionItem = this.bindingNavigatorPositionItem;
+            this.bnTerminal.Size = new System.Drawing.Size(722, 21);
+            this.bnTerminal.TabIndex = 12;
+            this.bnTerminal.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 18);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -416,16 +423,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 18);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 21);
             // 
             // bindingNavigatorMoveNextItem
@@ -448,7 +448,7 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 21);
             // 
             // frmQueryTerminal
@@ -461,17 +461,18 @@
             this.Name = "frmQueryTerminal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Terminal";
+            this.Load += new System.EventHandler(this.frmQueryTerminal_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gbQueryDetails.ResumeLayout(false);
+            this.gbQueryDetails.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQueries)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bnTerminal)).EndInit();
+            this.bnTerminal.ResumeLayout(false);
+            this.bnTerminal.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -479,33 +480,33 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label lblOName;
+        private System.Windows.Forms.Label lblSname;
+        private System.Windows.Forms.Label lblFname;
+        private System.Windows.Forms.Label lblDept;
+        private System.Windows.Forms.Label lblDeSignation;
+        private System.Windows.Forms.GroupBox gbQueryDetails;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.DateTimePicker dtpDate;
+        private System.Windows.Forms.Label lblQueriedBy;
+        private System.Windows.Forms.Label lblReason;
+        private System.Windows.Forms.TextBox txtReason;
+        private System.Windows.Forms.Label lblDetail;
+        private System.Windows.Forms.TextBox txtDetail;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblSubject;
+        private System.Windows.Forms.TextBox txtSubject;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblDepartment;
+        private System.Windows.Forms.Label lblDesig;
+        private System.Windows.Forms.Label lblOtherName;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblFirstname;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbQueriedBy;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dgvQueries;
-        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.BindingNavigator bnTerminal;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
