@@ -99,11 +99,11 @@ namespace DAHP.Prototype
 
         }
 
-        private void employmentSalaryStructureToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmEmployeeSalaryStructure frm = new frmEmployeeSalaryStructure();
-            frm.MdiParent = this;
-            frm.Show();
+        //private void employmentsalarystructuretoolstripmenuitem_click(object sender, EventArgs e)
+        //{
+        //    frmEmployeeSalaryStructure frm = new frmEmployeeSalaryStructure();
+        //    frm.MdiParent = this;
+        //    frm.Show();
         }
 
         //private void searchEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
