@@ -31,7 +31,7 @@ namespace DAHP.Infrastructure
        public DbSet<Designation> Designations { get; set; }
        public DbSet<Education>  Educations { get; set; }
        public DbSet<EmployeeCategory>  EmployeeCategorys { get; set; }
-       public DbSet<EmployeeType> EmployeeTypes { get; set; }
+       public DbSet<EmployeeSalaryInfo> EmployeeSalaryInfos { get; set; }
        public DbSet<EmploymentHistory> EmploymentHistorys { get; set; }
        public DbSet<GradeLevel> GradeLevels { get; set; }
        public DbSet<JobHistory> JobHistorys { get; set; }
@@ -40,7 +40,7 @@ namespace DAHP.Infrastructure
        public DbSet<NextOfKin>  NextOfKins { get; set; }
        public DbSet<PaymentSchedule> PaymentSchedules { get; set; }
        public DbSet<PayrollCategory> PayrollCategories { get; set; }
-       public DbSet <Qualification> Qualifications { get; set; }
+       public DbSet<Qualification> Qualification { get; set; }
        public DbSet<Query> Queries { get; set; }
        public DbSet<QueryGenerator> QueryGenerators { get; set; }
        public DbSet<ScheduleDeduction> ScheduleDeductions { get; set; }
