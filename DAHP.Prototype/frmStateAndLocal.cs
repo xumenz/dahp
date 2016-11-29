@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAHP.Domain;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,20 @@ namespace DAHP.Prototype
         {
             frmNewPromotion frm = new frmNewPromotion();
             frm.ShowDialog();
+        }
+
+        private void updateStateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (currentState() != null)
+            {
+                frmState frm = new frmState(currentState());
+                frm.ShowDialog();
+            }
+        }
+
+        private State currentState()
+        {
+            throw new NotImplementedException();
         }
     }
 }

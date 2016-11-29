@@ -39,7 +39,7 @@ namespace DAHP.Infrastructure
        public DbSet<GradeLevel> GradeLevels { get; set; }
        public DbSet<JobHistory> JobHistorys { get; set; }
        public DbSet<LevelDetail> LevelDetails { get; set; }
-       public DbSet<LGA> lga { get; set; }
+       public DbSet<Lga> Lgas { get; set; }
        public DbSet<NextOfKin>  NextOfKins { get; set; }
        public DbSet<PaymentSchedule> PaymentSchedules { get; set; }
        public DbSet<PayrollCategory> PayrollCategories { get; set; }
@@ -49,7 +49,6 @@ namespace DAHP.Infrastructure
        public DbSet<QueryGenerator> QueryGenerators { get; set; }
        public DbSet<ScheduleDeduction> ScheduleDeductions { get; set; }
        public DbSet<State> States { get; set; }
-       public DbSet<StateOfOrigin> StateOfOrigins { get; set; }
        public DbSet<Tax> Taxes { get; set; }
        public DbSet<Unit> Units { get; set; }
 

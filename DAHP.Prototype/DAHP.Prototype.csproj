@@ -324,6 +324,16 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAHP.Application\DAHP.Application.csproj">
+      <Project>{b55d8c28-0ff0-42b1-802b-1fad3f123da5}</Project>
+      <Name>DAHP.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAHP.Domain\DAHP.Domain.csproj">
+      <Project>{441a1419-3595-459b-b31b-0c0cc3b16a1e}</Project>
+      <Name>DAHP.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

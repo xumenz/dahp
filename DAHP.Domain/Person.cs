@@ -18,7 +18,7 @@ namespace DAHP.Domain
         public string NextofKin { get; set; }
         
         public  Guid LgaId { get; set; }
-        public virtual LGA Lga { get; set; }
+        public virtual Lga Lga { get; set; }
         public Guid StateId { get; set; }
         public virtual State  States { get; set; }
 

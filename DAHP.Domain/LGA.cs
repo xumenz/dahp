@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class LGA : BaseEntity
+    public class Lga : BaseEntity
     {
         public string LocalGovernmentName { get; set; }
         public Guid State { get; set; }

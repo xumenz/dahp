@@ -280,11 +280,12 @@ namespace DAHP.Application
         {
             return context.Queries.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
 
+            //context.Queries.Include(qr => qr.EmployementInfo.Person);
         }
 
 
         public Guid createQueryGenerator(QueryGenerator QueryGenerator)
-        {
+        {  
 
             context.QueryGenerators.Add(QueryGenerator);
             context.SaveChanges();
@@ -299,11 +300,7 @@ namespace DAHP.Application
         }
 
 
-        public Query GetQuery(Guid id)
-        {
-            return context.Queries.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
-
-        }
+       
 
         public Guid createUnit(Unit Unit)
         {

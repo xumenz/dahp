@@ -8,6 +8,6 @@ namespace DAHP.Domain
 {
     public class State : BaseEntity
     {
-        public string State { get; set; }
+        public string StateName { get; set; }
     }
 }
