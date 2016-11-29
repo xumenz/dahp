@@ -82,6 +82,7 @@ namespace DAHP.Application
             return context.Educations.Include("Person").Where(ps=>ps.Id == id).FirstOrDefault();
         }
 
+
         public Guid createEmployeeCategory(EmployeeCategory EmployeeCategory)
         {
 
@@ -100,7 +101,7 @@ namespace DAHP.Application
 
         public EmployeeCategory GetEmployeeCategory(Guid id)
         {
-            return context.EmployeeCategorys.Include("Person").Where(ps=>ps.Id == id).FirstOrDefault();
+            return context.EmployeeCategorys.Include("Person").Where(pl=>pl.Id == id).FirstOrDefault();
         }
 
 
@@ -146,13 +147,13 @@ namespace DAHP.Application
         //    return context.EmployeeTypes.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
         //}
 
-        public Guid createEmploymentHistory(EmploymentHistory EmployeeHistory)
+        public Guid createEmploymentHistory(EmploymentHistory EmploymentHistory)
         {
 
-            context.EmploymentHistorys.Add(EmployeeHistory);
+            context.EmploymentHistorys.Add(EmploymentHistory);
             context.SaveChanges();
 
-            return EmployeeHistory.Id;
+            return EmploymentHistory.Id;
         }
 
 
@@ -169,28 +170,72 @@ namespace DAHP.Application
         }
 
 
-        public Guid createEmploymentInfo(EmploymentInfo EmployeeInfo)
+               public Guid createGradeLevel(GradeLevel GradeLevel)
         {
 
-            context.EmploymentInfos.Add(EmploymentInfo);
+            context.GradeLevels.Add(GradeLevel);
             context.SaveChanges();
 
-            return EmploymentInfo.Id;
+            return GradeLevel.Id;
         }
 
 
-        public IList<EmploymentHistory> GetEmploymentHistory()
+        public IList<GradeLevel> GetGradeLevel()
         {
-            return context.EmploymentHistorys.ToList();
+            return context.GradeLevels.ToList();
         }
 
 
-        public EmploymentHistory GetEmploymentHistory(Guid id)
+        public GradeLevel GetGradeLevel(Guid id)
         {
-            return context.EmploymentHistorys.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
+            return context.GradeLevels.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
 
         }
 
+        public Guid createJobHistory(JobHistory JobHistory)
+        {
+
+            context.JobHistorys.Add(JobHistory);
+            context.SaveChanges();
+
+            return JobHistory.Id;
+        }
+
+
+        public IList<JobHistory> JobHistory()
+        {
+            return context.JobHistorys.ToList();
+        }
+
+
+        public JobHistory GetJobHistory(Guid id)
+        {
+            return context.JobHistorys.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
+
+        }
+
+
+        public Guid createLevelDetail(LevelDetail LevelDetail)
+        {
+
+            context.LevelDetails.Add(LevelDetail);
+            context.SaveChanges();
+
+            return LevelDetail.Id;
+        }
+
+
+        public IList<LevelDetail> LevelDetail()
+        {
+            return context.LevelDetails.ToList();
+        }
+
+
+        public LevelDetail GetLevelDetail(Guid id)
+        {
+            return context.LevelDetails.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
+
+        }
 
     }
 }
