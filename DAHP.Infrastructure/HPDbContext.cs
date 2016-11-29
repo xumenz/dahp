@@ -19,7 +19,7 @@ namespace DAHP.Infrastructure
 
        public DbSet<Person> Persons { get; set; }
 
-       public DbSet<EmploymentInfo> EmploymentInfo { get; set; }
+       public DbSet<EmploymentInfo> EmploymentInfos { get; set; }
 
        public DbSet<Bonus> Bonuses { get; set; }
 
@@ -35,7 +35,6 @@ namespace DAHP.Infrastructure
        public DbSet<Education>  Educations { get; set; }
        public DbSet<EmployeeCategory>  EmployeeCategorys { get; set; }
        public DbSet<EmployeeSalaryInfo> EmployeeSalaryInfos { get; set; }
-       public DbSet<EmployeeType> EmployeeTypes { get; set; }
        public DbSet<EmploymentHistory> EmploymentHistorys { get; set; }
        public DbSet<GradeLevel> GradeLevels { get; set; }
        public DbSet<JobHistory> JobHistorys { get; set; }

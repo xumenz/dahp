@@ -172,24 +172,13 @@ namespace DAHP.Application
         public Guid createEmploymentInfo(EmploymentInfo EmployeeInfo)
         {
 
-            context.EmploymentInfos.Add(EmploymentInfo);
+            context.EmploymentInfos.Add(EmployeeInfo);
             context.SaveChanges();
 
-            return EmploymentInfo.Id;
+            return EmployeeInfo.Id;
         }
 
 
-        public IList<EmploymentHistory> GetEmploymentHistory()
-        {
-            return context.EmploymentHistorys.ToList();
-        }
-
-
-        public EmploymentHistory GetEmploymentHistory(Guid id)
-        {
-            return context.EmploymentHistorys.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
-
-        }
 
 
     }
