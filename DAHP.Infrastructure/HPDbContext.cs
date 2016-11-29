@@ -13,17 +13,20 @@ namespace DAHP.Infrastructure
         public HPDbContext():base("name=HPDbContext")
         {
 
+        
         }
 
 
        public DbSet<Person> Persons { get; set; }
 
-       public DbSet<EmploymentInfo> EmploymentInfos { get; set; }
+       public DbSet<EmploymentInfo> EmploymentInfo { get; set; }
 
        public DbSet<Bonus> Bonuses { get; set; }
 
        public DbSet<CategoryBonus> CategoryBonuses { get; set; }
+
        public DbSet<CategoryDeduction> CategoryDeductions { get; set; }
+
        public DbSet <ContactInfo> ContactInfos { get; set; }
        public DbSet<ContactPhone> ContactPhones { get; set; }
        public DbSet<Department> Departments { get; set; }

@@ -60,11 +60,11 @@
             this.allowanceGridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.payScheduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.payCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employmentSalaryStructureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advancedOperationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.databaseBackupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataConnectionConfigurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.employmentSalaryStructureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -286,7 +286,7 @@
             this.salaryGridToolStripMenuItem,
             this.allowanceGridToolStripMenuItem});
             this.salaryAllowanceGridToolStripMenuItem.Name = "salaryAllowanceGridToolStripMenuItem";
-            this.salaryAllowanceGridToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.salaryAllowanceGridToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.salaryAllowanceGridToolStripMenuItem.Text = "Salary/Allowance Grid";
             this.salaryAllowanceGridToolStripMenuItem.Click += new System.EventHandler(this.salaryAllowanceGridToolStripMenuItem_Click);
             // 
@@ -305,14 +305,21 @@
             // payScheduleToolStripMenuItem
             // 
             this.payScheduleToolStripMenuItem.Name = "payScheduleToolStripMenuItem";
-            this.payScheduleToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.payScheduleToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.payScheduleToolStripMenuItem.Text = "Pay Schedule";
             // 
             // payCategoryToolStripMenuItem
             // 
             this.payCategoryToolStripMenuItem.Name = "payCategoryToolStripMenuItem";
-            this.payCategoryToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.payCategoryToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.payCategoryToolStripMenuItem.Text = "Pay Category";
+            // 
+            // employmentSalaryStructureToolStripMenuItem
+            // 
+            this.employmentSalaryStructureToolStripMenuItem.Name = "employmentSalaryStructureToolStripMenuItem";
+            this.employmentSalaryStructureToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.employmentSalaryStructureToolStripMenuItem.Text = "Employment Salary Structure";
+            this.employmentSalaryStructureToolStripMenuItem.Click += new System.EventHandler(this.employmentSalaryStructureToolStripMenuItem_Click);
             // 
             // advancedOperationToolStripMenuItem
             // 
@@ -342,13 +349,6 @@
             this.statusStrip1.Size = new System.Drawing.Size(984, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // employmentSalaryStructureToolStripMenuItem
-            // 
-            //this.employmentSalaryStructureToolStripMenuItem.Name = "employmentSalaryStructureToolStripMenuItem";
-            //this.employmentSalaryStructureToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            //this.employmentSalaryStructureToolStripMenuItem.Text = "Employee Salary Structure";
-            //this.employmentSalaryStructureToolStripMenuItem.Click += new System.EventHandler(this.employmentSalaryStructureToolStripMenuItem_Click);
             // 
             // frmShell
             // 
