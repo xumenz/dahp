@@ -104,26 +104,93 @@ namespace DAHP.Application
         }
 
 
-        public Guid createEmployeeCategory(EmployeeCategory EmployeeCategory)
+        public Guid createEmployeeSalaryInfo(EmployeeSalaryInfo EmployeeSalaryInfo)
         {
 
-            context.EmployeeCategorys.Add(EmployeeCategory);
+            context.EmployeeSalaryInfos.Add(EmployeeSalaryInfo);
             context.SaveChanges();
 
-            return EmployeeCategory.Id;
+            return EmployeeSalaryInfo.Id;
         }
 
 
-        public IList<EmployeeCategory> GetEmployeeCategories()
+        public IList<EmployeeSalaryInfo> GetEmployeeInfos()
         {
-            return context.EmployeeCategorys.ToList();
+            return context.EmployeeSalaryInfos.ToList();
         }
 
 
-        public EmployeeCategory GetEmployeeCategory(Guid id)
+        public EmployeeSalaryInfo GetEmployeeSalary(Guid id)
         {
-            return context.EmployeeCategorys.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
+            return context.EmployeeSalaryInfos.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
         }
+
+        //public Guid createEmployeeType(EmployeeType EmployeeType)
+        //{
+
+        //    context.EmployeeTypes.Add(EmployeeType);
+        //    context.SaveChanges();
+
+        //    return EmployeeType.Id;
+        //}
+
+
+        //public IList<EmployeeType> GetEmployeeTypes()
+        //{
+        //    return context.EmployeeTypes.ToList();
+        //}
+
+
+        //public EmployeeType GetEmployeType(Guid id)
+        //{
+        //    return context.EmployeeTypes.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
+        //}
+
+        public Guid createEmploymentHistory(EmploymentHistory EmployeeHistory)
+        {
+
+            context.EmploymentHistorys.Add(EmployeeHistory);
+            context.SaveChanges();
+
+            return EmployeeHistory.Id;
+        }
+
+
+        public IList<EmploymentHistory> GetEmploymentHistory()
+        {
+            return context.EmploymentHistorys.ToList();
+        }
+
+
+        public EmploymentHistory GetEmploymentHistory(Guid id)
+        {
+            return context.EmploymentHistorys.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
+
+        }
+
+
+        public Guid createEmploymentInfo(EmploymentInfo EmployeeInfo)
+        {
+
+            context.EmploymentInfos.Add(EmploymentInfo);
+            context.SaveChanges();
+
+            return EmploymentInfo.Id;
+        }
+
+
+        public IList<EmploymentHistory> GetEmploymentHistory()
+        {
+            return context.EmploymentHistorys.ToList();
+        }
+
+
+        public EmploymentHistory GetEmploymentHistory(Guid id)
+        {
+            return context.EmploymentHistorys.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
+
+        }
+
 
     }
 }
