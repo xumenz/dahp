@@ -13,7 +13,7 @@ namespace DAHP.Infrastructure
         public HPDbContext():base("name=HPDbContext")
         {
 
-        
+              
         }
 
 
@@ -44,6 +44,7 @@ namespace DAHP.Infrastructure
        public DbSet<NextOfKin>  NextOfKins { get; set; }
        public DbSet<PaymentSchedule> PaymentSchedules { get; set; }
        public DbSet<PayrollCategory> PayrollCategories { get; set; }
+       public DbSet<ProfessionalQualification> ProfessionalQualifications { get; set; }
        public DbSet<Qualification> Qualification { get; set; }
        public DbSet<Query> Queries { get; set; }
        public DbSet<QueryGenerator> QueryGenerators { get; set; }

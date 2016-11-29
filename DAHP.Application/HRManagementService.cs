@@ -237,5 +237,139 @@ namespace DAHP.Application
 
         }
 
+        public Guid createProfessionalQualification(ProfessionalQualification ProfessionalQualification)
+        {
+
+            context.ProfessionalQualifications.Add(ProfessionalQualification);
+            context.SaveChanges();
+
+            return ProfessionalQualification.Id;
+        }
+
+
+        public IList<ProfessionalQualification> ProfessionalQUalification()
+        {
+            return context.ProfessionalQualifications.ToList();
+        }
+
+
+        public ProfessionalQualification GetProfessionalQualification(Guid id)
+        {
+            return context.ProfessionalQualifications.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
+
+        }
+
+
+        public Guid createQuery(Query Query)
+        {
+
+            context.Queries.Add(Query);
+            context.SaveChanges();
+
+            return Query.Id;
+        }
+
+
+        public IList<Query> GetQuery()
+        {
+            return context.Queries.ToList();
+        }
+
+
+        public Query GetQuery(Guid id)
+        {
+            return context.Queries.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
+
+        }
+
+
+        public Guid createQueryGenerator(QueryGenerator QueryGenerator)
+        {
+
+            context.QueryGenerators.Add(QueryGenerator);
+            context.SaveChanges();
+
+            return QueryGenerator.Id;
+        }
+
+
+        public IList<QueryGenerator> GetQueryGenerator()
+        {
+            return context.QueryGenerators.ToList();
+        }
+
+
+        public Query GetQuery(Guid id)
+        {
+            return context.Queries.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
+
+        }
+
+        public Guid createUnit(Unit Unit)
+        {
+
+            context.Units.Add(Unit);
+            context.SaveChanges();
+
+            return Unit.Id;
+        }
+
+
+        public IList<Unit> GetUnit()
+        {
+            return context.Units.ToList();
+        }
+
+
+        public Unit GetUnit(Guid id)
+        {
+            return context.Units.Include("person").Where(ps => ps.Id == id).FirstOrDefault();
+
+        }
+
+
+        public Guid createDepartment(Department Department)
+        {
+
+            context.Departments.Add(Department);
+            context.SaveChanges();
+
+            return Department.Id;
+        }
+
+
+        public IList<Department> GetDepartment()
+        {
+            return context.Departments.ToList();
+        }
+
+
+        public Department GetDepartment(Guid id)
+        {
+            return context.Departments.Include("person").Where(ps => ps.Id == id).FirstOrDefault();
+        }
+
+
+        public Guid createDepartmentHeadHistory(DepartmentHeadHistory DepartmentHeadHistory)
+        {
+
+            context.DepartmentHeadHistorys.Add(DepartmentHeadHistory);
+            context.SaveChanges();
+
+            return DepartmentHeadHistory.Id;
+        }
+
+
+        public IList<DepartmentHeadHistory> GetDepartmentHeadHistory()
+        {
+            return context.DepartmentHeadHistorys.ToList();
+        }
+
+
+        public DepartmentHeadHistory DepartmentHeadHistory(Guid id)
+        {
+            return context.DepartmentHeadHistorys.Include("person").Where(ps => ps.Id == id).FirstOrDefault();
+        }
+
     }
 }
