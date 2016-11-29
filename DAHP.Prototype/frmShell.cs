@@ -100,5 +100,12 @@ namespace DAHP.Prototype
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void employmentSalaryStructureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //frmEmployeeSalaryStructure frm = new frmEmployeeSalaryStructure();
+            //frm.MdiParent = this;
+            //frm.Show();
+        }
     }
 }

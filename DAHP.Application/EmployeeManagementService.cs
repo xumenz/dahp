@@ -44,7 +44,7 @@ namespace DAHP.Application
         public Guid createEmploymentInfo(EmploymentInfo EmploymentInfo)
         {
 
-            context.EmploymentInfos.Add(EmploymentInfo);
+            context.EmploymentInfo.Add(EmploymentInfo);
             context.SaveChanges();
 
             return EmploymentInfo.Id;
@@ -53,13 +53,13 @@ namespace DAHP.Application
 
         public IList<EmploymentInfo> GetEmploymentInfos()
         {
-            return context.EmploymentInfos.ToList();
+            return context.EmploymentInfo.ToList();
         }
 
 
         public EmploymentInfo GetEmploymentInfo(Guid id)
         {
-            return context.EmploymentInfos.Include("Person").Where(ps=>ps.Id == id).FirstOrDefault();
+            return context.EmploymentInfo.Include("Person").Where(ps=>ps.Id == id).FirstOrDefault();
         }
     }
 }

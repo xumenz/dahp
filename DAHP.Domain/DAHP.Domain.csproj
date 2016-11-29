@@ -63,6 +63,7 @@
     <Compile Include="NextOfKin.cs" />
     <Compile Include="PayrollCategory.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="ProfessionalQualification.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Qualification.cs" />
     <Compile Include="Query.cs" />

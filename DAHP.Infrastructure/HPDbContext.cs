@@ -19,7 +19,7 @@ namespace DAHP.Infrastructure
 
        public DbSet<Person> Persons { get; set; }
 
-       public DbSet<EmploymentInfo> EmploymentInfos { get; set; }
+       public DbSet<EmploymentInfo> EmploymentInfo { get; set; }
 
        public DbSet<Bonus> Bonuses { get; set; }
 
