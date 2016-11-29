@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="EmployeeManagementService.cs" />
     <Compile Include="HRManagementService.cs" />
+    <Compile Include="PayrollManagementService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
