@@ -31,23 +31,22 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.cmbDateObtained = new System.Windows.Forms.ComboBox();
             this.lblDateObtained = new System.Windows.Forms.Label();
             this.cmbQualificationName = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.tpEducationalQualification = new System.Windows.Forms.TabPage();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.txtSchoolObtained = new System.Windows.Forms.TextBox();
+            this.cmbCertificateIssuseDate = new System.Windows.Forms.ComboBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.CmbDegreeName = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtRelationship = new System.Windows.Forms.TextBox();
+            this.lblRelationship = new System.Windows.Forms.Label();
+            this.txtNKContactAddress = new System.Windows.Forms.TextBox();
             this.txtSName = new System.Windows.Forms.TextBox();
             this.txtMName = new System.Windows.Forms.TextBox();
             this.txtFName = new System.Windows.Forms.TextBox();
@@ -61,10 +60,12 @@
             this.lblMName = new System.Windows.Forms.Label();
             this.lblFName = new System.Windows.Forms.Label();
             this.tpContactPhones = new System.Windows.Forms.TabPage();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.txtPhoneNumber2 = new System.Windows.Forms.TextBox();
             this.lblPhoneNUmber2 = new System.Windows.Forms.Label();
             this.lblPhoneNumber1 = new System.Windows.Forms.Label();
             this.tpContactInformation = new System.Windows.Forms.TabPage();
+            this.cmbLGA = new System.Windows.Forms.ComboBox();
             this.cmbAddressType = new System.Windows.Forms.ComboBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
@@ -87,8 +88,9 @@
             this.lblDateofBirth = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.tbcNewEmployee = new System.Windows.Forms.TabControl();
-            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
-            this.cmbLGA = new System.Windows.Forms.ComboBox();
+            this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpFinishDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpQualificationDate = new System.Windows.Forms.DateTimePicker();
             this.tabPage7.SuspendLayout();
             this.tpEducationalQualification.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -100,7 +102,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(435, 300);
+            this.btnCancel.Location = new System.Drawing.Point(435, 329);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 34);
             this.btnCancel.TabIndex = 11;
@@ -109,7 +111,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(352, 300);
+            this.btnSave.Location = new System.Drawing.Point(354, 329);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 34);
             this.btnSave.TabIndex = 10;
@@ -120,24 +122,16 @@
             // tabPage7
             // 
             this.tabPage7.BackColor = System.Drawing.Color.DarkGray;
-            this.tabPage7.Controls.Add(this.cmbDateObtained);
+            this.tabPage7.Controls.Add(this.dtpQualificationDate);
             this.tabPage7.Controls.Add(this.lblDateObtained);
             this.tabPage7.Controls.Add(this.cmbQualificationName);
             this.tabPage7.Controls.Add(this.label34);
             this.tabPage7.Location = new System.Drawing.Point(4, 27);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(541, 252);
+            this.tabPage7.Size = new System.Drawing.Size(541, 292);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Professional Qualification";
             this.tabPage7.Click += new System.EventHandler(this.tabPage7_Click);
-            // 
-            // cmbDateObtained
-            // 
-            this.cmbDateObtained.FormattingEnabled = true;
-            this.cmbDateObtained.Location = new System.Drawing.Point(164, 141);
-            this.cmbDateObtained.Name = "cmbDateObtained";
-            this.cmbDateObtained.Size = new System.Drawing.Size(357, 26);
-            this.cmbDateObtained.TabIndex = 5;
             // 
             // lblDateObtained
             // 
@@ -168,45 +162,45 @@
             // tpEducationalQualification
             // 
             this.tpEducationalQualification.BackColor = System.Drawing.Color.DarkGray;
-            this.tpEducationalQualification.Controls.Add(this.textBox11);
-            this.tpEducationalQualification.Controls.Add(this.comboBox12);
+            this.tpEducationalQualification.Controls.Add(this.dtpFinishDate);
+            this.tpEducationalQualification.Controls.Add(this.dtpStartDate);
+            this.tpEducationalQualification.Controls.Add(this.txtSchoolObtained);
+            this.tpEducationalQualification.Controls.Add(this.cmbCertificateIssuseDate);
             this.tpEducationalQualification.Controls.Add(this.label31);
-            this.tpEducationalQualification.Controls.Add(this.comboBox13);
             this.tpEducationalQualification.Controls.Add(this.label32);
-            this.tpEducationalQualification.Controls.Add(this.comboBox14);
             this.tpEducationalQualification.Controls.Add(this.label33);
             this.tpEducationalQualification.Controls.Add(this.label29);
-            this.tpEducationalQualification.Controls.Add(this.comboBox9);
+            this.tpEducationalQualification.Controls.Add(this.CmbDegreeName);
             this.tpEducationalQualification.Controls.Add(this.label28);
             this.tpEducationalQualification.Location = new System.Drawing.Point(4, 27);
             this.tpEducationalQualification.Name = "tpEducationalQualification";
             this.tpEducationalQualification.Padding = new System.Windows.Forms.Padding(3);
-            this.tpEducationalQualification.Size = new System.Drawing.Size(541, 252);
+            this.tpEducationalQualification.Size = new System.Drawing.Size(541, 292);
             this.tpEducationalQualification.TabIndex = 5;
             this.tpEducationalQualification.Text = "Educational Qualification";
             this.tpEducationalQualification.Click += new System.EventHandler(this.tabPage6_Click);
             // 
-            // textBox11
+            // txtSchoolObtained
             // 
-            this.textBox11.Location = new System.Drawing.Point(169, 71);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(337, 23);
-            this.textBox11.TabIndex = 12;
+            this.txtSchoolObtained.Location = new System.Drawing.Point(169, 71);
+            this.txtSchoolObtained.Name = "txtSchoolObtained";
+            this.txtSchoolObtained.Size = new System.Drawing.Size(337, 23);
+            this.txtSchoolObtained.TabIndex = 12;
             // 
-            // comboBox12
+            // cmbCertificateIssuseDate
             // 
-            this.comboBox12.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cmbCertificateIssuseDate.AutoCompleteCustomSource.AddRange(new string[] {
             "First School Leaving Certificate",
             "O\'Levels/A\'Levels",
             "Advanced Diploma (Associate Degree)",
             "Bachelors Degree",
             "Masters Degree",
             "Doctorate Degree"});
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(169, 209);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(338, 26);
-            this.comboBox12.TabIndex = 11;
+            this.cmbCertificateIssuseDate.FormattingEnabled = true;
+            this.cmbCertificateIssuseDate.Location = new System.Drawing.Point(169, 209);
+            this.cmbCertificateIssuseDate.Name = "cmbCertificateIssuseDate";
+            this.cmbCertificateIssuseDate.Size = new System.Drawing.Size(338, 26);
+            this.cmbCertificateIssuseDate.TabIndex = 11;
             // 
             // label31
             // 
@@ -217,21 +211,6 @@
             this.label31.TabIndex = 10;
             this.label31.Text = "Certificate Issue Date:";
             // 
-            // comboBox13
-            // 
-            this.comboBox13.AutoCompleteCustomSource.AddRange(new string[] {
-            "First School Leaving Certificate",
-            "O\'Levels/A\'Levels",
-            "Advanced Diploma (Associate Degree)",
-            "Bachelors Degree",
-            "Masters Degree",
-            "Doctorate Degree"});
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(169, 161);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(338, 26);
-            this.comboBox13.TabIndex = 9;
-            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -240,21 +219,6 @@
             this.label32.Size = new System.Drawing.Size(79, 18);
             this.label32.TabIndex = 8;
             this.label32.Text = "Finish Date:";
-            // 
-            // comboBox14
-            // 
-            this.comboBox14.AutoCompleteCustomSource.AddRange(new string[] {
-            "First School Leaving Certificate",
-            "O\'Levels/A\'Levels",
-            "Advanced Diploma (Associate Degree)",
-            "Bachelors Degree",
-            "Masters Degree",
-            "Doctorate Degree"});
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(169, 115);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(338, 26);
-            this.comboBox14.TabIndex = 7;
             // 
             // label33
             // 
@@ -276,21 +240,21 @@
             this.label29.Text = "School Obtained:";
             this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
-            // comboBox9
+            // CmbDegreeName
             // 
-            this.comboBox9.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CmbDegreeName.AutoCompleteCustomSource.AddRange(new string[] {
             "First School Leaving Certificate",
             "O\'Levels/A\'Levels",
             "Advanced Diploma (Associate Degree)",
             "Bachelors Degree",
             "Masters Degree",
             "Doctorate Degree"});
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(169, 22);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(338, 26);
-            this.comboBox9.TabIndex = 1;
-            this.comboBox9.SelectedIndexChanged += new System.EventHandler(this.comboBox9_SelectedIndexChanged);
+            this.CmbDegreeName.FormattingEnabled = true;
+            this.CmbDegreeName.Location = new System.Drawing.Point(169, 22);
+            this.CmbDegreeName.Name = "CmbDegreeName";
+            this.CmbDegreeName.Size = new System.Drawing.Size(338, 26);
+            this.CmbDegreeName.TabIndex = 1;
+            this.CmbDegreeName.SelectedIndexChanged += new System.EventHandler(this.comboBox9_SelectedIndexChanged);
             // 
             // label28
             // 
@@ -305,7 +269,9 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.DarkGray;
-            this.tabPage5.Controls.Add(this.textBox13);
+            this.tabPage5.Controls.Add(this.txtRelationship);
+            this.tabPage5.Controls.Add(this.lblRelationship);
+            this.tabPage5.Controls.Add(this.txtNKContactAddress);
             this.tabPage5.Controls.Add(this.txtSName);
             this.tabPage5.Controls.Add(this.txtMName);
             this.tabPage5.Controls.Add(this.txtFName);
@@ -321,18 +287,34 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 27);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(541, 252);
+            this.tabPage5.Size = new System.Drawing.Size(541, 292);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Next of Kin";
             this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
-            // textBox13
+            // txtRelationship
             // 
-            this.textBox13.Location = new System.Drawing.Point(136, 153);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(371, 53);
-            this.textBox13.TabIndex = 21;
+            this.txtRelationship.Location = new System.Drawing.Point(134, 257);
+            this.txtRelationship.Name = "txtRelationship";
+            this.txtRelationship.Size = new System.Drawing.Size(371, 23);
+            this.txtRelationship.TabIndex = 23;
+            // 
+            // lblRelationship
+            // 
+            this.lblRelationship.AutoSize = true;
+            this.lblRelationship.Location = new System.Drawing.Point(10, 262);
+            this.lblRelationship.Name = "lblRelationship";
+            this.lblRelationship.Size = new System.Drawing.Size(79, 18);
+            this.lblRelationship.TabIndex = 22;
+            this.lblRelationship.Text = "Relationship";
+            // 
+            // txtNKContactAddress
+            // 
+            this.txtNKContactAddress.Location = new System.Drawing.Point(136, 153);
+            this.txtNKContactAddress.Multiline = true;
+            this.txtNKContactAddress.Name = "txtNKContactAddress";
+            this.txtNKContactAddress.Size = new System.Drawing.Size(371, 53);
+            this.txtNKContactAddress.TabIndex = 21;
             // 
             // txtSName
             // 
@@ -384,7 +366,7 @@
             // rdbGenderFemale
             // 
             this.rdbGenderFemale.AutoSize = true;
-            this.rdbGenderFemale.Location = new System.Drawing.Point(195, 124);
+            this.rdbGenderFemale.Location = new System.Drawing.Point(181, 124);
             this.rdbGenderFemale.Name = "rdbGenderFemale";
             this.rdbGenderFemale.Size = new System.Drawing.Size(68, 22);
             this.rdbGenderFemale.TabIndex = 12;
@@ -395,7 +377,7 @@
             // rdbGenderMale
             // 
             this.rdbGenderMale.AutoSize = true;
-            this.rdbGenderMale.Location = new System.Drawing.Point(136, 124);
+            this.rdbGenderMale.Location = new System.Drawing.Point(133, 124);
             this.rdbGenderMale.Name = "rdbGenderMale";
             this.rdbGenderMale.Size = new System.Drawing.Size(53, 22);
             this.rdbGenderMale.TabIndex = 11;
@@ -449,10 +431,17 @@
             this.tpContactPhones.Location = new System.Drawing.Point(4, 27);
             this.tpContactPhones.Name = "tpContactPhones";
             this.tpContactPhones.Padding = new System.Windows.Forms.Padding(3);
-            this.tpContactPhones.Size = new System.Drawing.Size(541, 252);
+            this.tpContactPhones.Size = new System.Drawing.Size(541, 292);
             this.tpContactPhones.TabIndex = 2;
             this.tpContactPhones.Text = "Contact Phones";
             this.tpContactPhones.Click += new System.EventHandler(this.tpContactPhones_Click);
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.Location = new System.Drawing.Point(184, 84);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(243, 23);
+            this.txtPhoneNumber.TabIndex = 10;
             // 
             // txtPhoneNumber2
             // 
@@ -494,9 +483,17 @@
             this.tpContactInformation.Location = new System.Drawing.Point(4, 27);
             this.tpContactInformation.Name = "tpContactInformation";
             this.tpContactInformation.Padding = new System.Windows.Forms.Padding(3);
-            this.tpContactInformation.Size = new System.Drawing.Size(541, 280);
+            this.tpContactInformation.Size = new System.Drawing.Size(541, 292);
             this.tpContactInformation.TabIndex = 1;
             this.tpContactInformation.Text = "Contact Information";
+            // 
+            // cmbLGA
+            // 
+            this.cmbLGA.FormattingEnabled = true;
+            this.cmbLGA.Location = new System.Drawing.Point(199, 164);
+            this.cmbLGA.Name = "cmbLGA";
+            this.cmbLGA.Size = new System.Drawing.Size(241, 26);
+            this.cmbLGA.TabIndex = 13;
             // 
             // cmbAddressType
             // 
@@ -578,7 +575,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(541, 336);
+            this.tabPage1.Size = new System.Drawing.Size(541, 292);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Personal Information";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -713,30 +710,36 @@
             this.tbcNewEmployee.Location = new System.Drawing.Point(0, 0);
             this.tbcNewEmployee.Name = "tbcNewEmployee";
             this.tbcNewEmployee.SelectedIndex = 0;
-            this.tbcNewEmployee.Size = new System.Drawing.Size(549, 283);
+            this.tbcNewEmployee.Size = new System.Drawing.Size(549, 323);
             this.tbcNewEmployee.TabIndex = 0;
             // 
-            // txtPhoneNumber
+            // dtpStartDate
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(184, 84);
-            this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(243, 23);
-            this.txtPhoneNumber.TabIndex = 10;
+            this.dtpStartDate.Location = new System.Drawing.Point(169, 116);
+            this.dtpStartDate.Name = "dtpStartDate";
+            this.dtpStartDate.Size = new System.Drawing.Size(338, 23);
+            this.dtpStartDate.TabIndex = 13;
             // 
-            // cmbLGA
+            // dtpFinishDate
             // 
-            this.cmbLGA.FormattingEnabled = true;
-            this.cmbLGA.Location = new System.Drawing.Point(199, 164);
-            this.cmbLGA.Name = "cmbLGA";
-            this.cmbLGA.Size = new System.Drawing.Size(241, 26);
-            this.cmbLGA.TabIndex = 13;
+            this.dtpFinishDate.Location = new System.Drawing.Point(169, 159);
+            this.dtpFinishDate.Name = "dtpFinishDate";
+            this.dtpFinishDate.Size = new System.Drawing.Size(338, 23);
+            this.dtpFinishDate.TabIndex = 14;
+            // 
+            // dtpQualificationDate
+            // 
+            this.dtpQualificationDate.Location = new System.Drawing.Point(164, 139);
+            this.dtpQualificationDate.Name = "dtpQualificationDate";
+            this.dtpQualificationDate.Size = new System.Drawing.Size(357, 23);
+            this.dtpQualificationDate.TabIndex = 5;
             // 
             // frmNewEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(549, 348);
+            this.ClientSize = new System.Drawing.Size(549, 375);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tbcNewEmployee);
@@ -768,23 +771,20 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.ComboBox cmbDateObtained;
         private System.Windows.Forms.Label lblDateObtained;
         private System.Windows.Forms.ComboBox cmbQualificationName;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TabPage tpEducationalQualification;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.TextBox txtSchoolObtained;
+        private System.Windows.Forms.ComboBox cmbCertificateIssuseDate;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.ComboBox comboBox13;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.ComboBox comboBox14;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox CmbDegreeName;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtNKContactAddress;
         private System.Windows.Forms.TextBox txtSName;
         private System.Windows.Forms.TextBox txtMName;
         private System.Windows.Forms.TextBox txtFName;
@@ -826,6 +826,11 @@
         private System.Windows.Forms.TabControl tbcNewEmployee;
         private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.ComboBox cmbLGA;
+        private System.Windows.Forms.TextBox txtRelationship;
+        private System.Windows.Forms.Label lblRelationship;
+        private System.Windows.Forms.DateTimePicker dtpFinishDate;
+        private System.Windows.Forms.DateTimePicker dtpStartDate;
+        private System.Windows.Forms.DateTimePicker dtpQualificationDate;
 
     }
 }

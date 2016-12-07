@@ -1,6 +1,6 @@
 ﻿namespace DAHP.Prototype
 {
-    partial class frmBonusCalculator
+    partial class frmUnit
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.gbSave = new System.Windows.Forms.GroupBox();
+            this.lblDepartmentName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtUnit = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblDepartmentName = new System.Windows.Forms.Label();
             this.gbSave.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,25 @@
             this.gbSave.TabIndex = 1;
             this.gbSave.TabStop = false;
             this.gbSave.Text = "Enter/Modify Unit";
+            this.gbSave.Enter += new System.EventHandler(this.gbSave_Enter);
+            // 
+            // lblDepartmentName
+            // 
+            this.lblDepartmentName.AutoSize = true;
+            this.lblDepartmentName.Location = new System.Drawing.Point(108, 27);
+            this.lblDepartmentName.Name = "lblDepartmentName";
+            this.lblDepartmentName.Size = new System.Drawing.Size(77, 18);
+            this.lblDepartmentName.TabIndex = 8;
+            this.lblDepartmentName.Text = "Department";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 18);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Department : ";
             // 
             // txtUnit
             // 
@@ -68,7 +87,6 @@
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -78,24 +96,7 @@
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 18);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Department : ";
-            // 
-            // lblDepartmentName
-            // 
-            this.lblDepartmentName.AutoSize = true;
-            this.lblDepartmentName.Location = new System.Drawing.Point(108, 27);
-            this.lblDepartmentName.Name = "lblDepartmentName";
-            this.lblDepartmentName.Size = new System.Drawing.Size(77, 18);
-            this.lblDepartmentName.TabIndex = 8;
-            this.lblDepartmentName.Text = "Department";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmUnit
             // 
@@ -108,7 +109,6 @@
             this.Name = "frmUnit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Unit";
-            this.Load += new System.EventHandler(this.frmNewDesignation_Load);
             this.gbSave.ResumeLayout(false);
             this.gbSave.PerformLayout();
             this.ResumeLayout(false);

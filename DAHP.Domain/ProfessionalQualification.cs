@@ -8,7 +8,7 @@ namespace DAHP.Domain
 {
    public class ProfessionalQualification : BaseEntity
     {
-        public Guid Id { get; set; }
+        //public Guid Id { get; set; }
         public Guid PersonId { get; set; }
         public DateTime DateObtained { get; set; }
         public string CertificateName { get; set; }

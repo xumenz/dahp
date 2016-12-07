@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HPDbContext.cs" />
+    <Compile Include="Mappings\StateEntityConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\PersonRepository.cs" />
   </ItemGroup>

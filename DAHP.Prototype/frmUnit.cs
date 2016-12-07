@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace DAHP.Prototype
 {
-    public partial class frmBonusCalculator : Form
+    public partial class frmUnit : Form
     {
-        public frmBonusCalculator()
+        public frmUnit()
         {
             InitializeComponent();
         }
 
-        private void frmNewDesignation_Load(object sender, EventArgs e)
+        private void frmUnit_Load(object sender, EventArgs e)
         {
 
         }
@@ -25,6 +25,16 @@ namespace DAHP.Prototype
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void gbSave_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

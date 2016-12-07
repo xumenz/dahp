@@ -29,15 +29,17 @@
         private void InitializeComponent()
         {
             this.gbSave = new System.Windows.Forms.GroupBox();
-            this.txtStateName = new System.Windows.Forms.TextBox();
+            this.txtLgaName = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.lblStateInfo = new System.Windows.Forms.Label();
             this.gbSave.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbSave
             // 
-            this.gbSave.Controls.Add(this.txtStateName);
+            this.gbSave.Controls.Add(this.lblStateInfo);
+            this.gbSave.Controls.Add(this.txtLgaName);
             this.gbSave.Controls.Add(this.btnCancel);
             this.gbSave.Controls.Add(this.btnSave);
             this.gbSave.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -47,14 +49,14 @@
             this.gbSave.Size = new System.Drawing.Size(340, 118);
             this.gbSave.TabIndex = 1;
             this.gbSave.TabStop = false;
-            this.gbSave.Text = "Enter/Modify State";
+            this.gbSave.Text = "Enter/Modify Lga";
             // 
-            // txtStateName
+            // txtLgaName
             // 
-            this.txtStateName.Location = new System.Drawing.Point(12, 34);
-            this.txtStateName.Name = "txtStateName";
-            this.txtStateName.Size = new System.Drawing.Size(295, 23);
-            this.txtStateName.TabIndex = 6;
+            this.txtLgaName.Location = new System.Drawing.Point(12, 48);
+            this.txtLgaName.Name = "txtLgaName";
+            this.txtLgaName.Size = new System.Drawing.Size(295, 23);
+            this.txtLgaName.TabIndex = 6;
             // 
             // btnCancel
             // 
@@ -74,6 +76,16 @@
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // lblStateInfo
+            // 
+            this.lblStateInfo.AutoSize = true;
+            this.lblStateInfo.Location = new System.Drawing.Point(12, 19);
+            this.lblStateInfo.Name = "lblStateInfo";
+            this.lblStateInfo.Size = new System.Drawing.Size(66, 18);
+            this.lblStateInfo.TabIndex = 7;
+            this.lblStateInfo.Text = "State Info";
             // 
             // frmLga
             // 
@@ -85,7 +97,7 @@
             this.Controls.Add(this.gbSave);
             this.Name = "frmLga";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "State";
+            this.Text = "Local Governmrnt Area";
             this.Load += new System.EventHandler(this.frmLga_Load);
             this.gbSave.ResumeLayout(false);
             this.gbSave.PerformLayout();
@@ -98,7 +110,8 @@
         private System.Windows.Forms.GroupBox gbSave;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox txtStateName;
+        private System.Windows.Forms.TextBox txtLgaName;
+        private System.Windows.Forms.Label lblStateInfo;
 
     }
 }

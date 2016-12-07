@@ -1,4 +1,5 @@
 ﻿using DAHP.Domain;
+using DAHP.Infrastructure.Mappings;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -52,6 +53,13 @@ namespace DAHP.Infrastructure
        public DbSet<Tax> Taxes { get; set; }
        public DbSet<Unit> Units { get; set; }
 
-       
+
+       protected override void OnModelCreating(DbModelBuilder modelBuilder)
+       {
+           //base.OnModelCreating(modelBuilder);
+           modelBuilder.Configurations.Add(new StateEntityConfig());
+           modelBuilder.Configurations.Add(new LgaEntityConfig());
+
+       }
     }
 }

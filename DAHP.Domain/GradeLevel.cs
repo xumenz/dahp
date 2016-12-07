@@ -8,7 +8,7 @@ namespace DAHP.Domain
 {
     public class GradeLevel : BaseEntity
     {
-        public Guid Id { get; set; }
+       // public Guid Id { get; set; }
         public string LevelInfo { get; set; }
     }
 }

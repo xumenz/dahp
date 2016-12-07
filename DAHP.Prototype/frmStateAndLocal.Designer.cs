@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStateAndLocal));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvLga = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvState = new System.Windows.Forms.DataGridView();
             this.bnStates = new System.Windows.Forms.BindingNavigator(this.components);
@@ -59,9 +59,12 @@
             this.tsbNewLga = new System.Windows.Forms.ToolStripButton();
             this.cmsCore = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.updateStateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bsStates = new System.Windows.Forms.BindingSource(this.components);
+            this.bsLgas = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLga)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvState)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bnStates)).BeginInit();
@@ -69,6 +72,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bnLgas)).BeginInit();
             this.bnLgas.SuspendLayout();
             this.cmsCore.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsStates)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLgas)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -91,7 +96,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.dgvLga);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(316, 3);
             this.groupBox2.Name = "groupBox2";
@@ -100,18 +105,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Local Governments";
             // 
-            // dataGridView1
+            // dgvLga
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(302, 295);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvLga.AllowUserToAddRows = false;
+            this.dgvLga.AllowUserToDeleteRows = false;
+            this.dgvLga.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvLga.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLga.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvLga.Location = new System.Drawing.Point(3, 16);
+            this.dgvLga.Name = "dgvLga";
+            this.dgvLga.ReadOnly = true;
+            this.dgvLga.Size = new System.Drawing.Size(302, 295);
+            this.dgvLga.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -136,6 +141,7 @@
             this.dgvState.ReadOnly = true;
             this.dgvState.Size = new System.Drawing.Size(301, 295);
             this.dgvState.TabIndex = 0;
+            this.dgvState.SelectionChanged += new System.EventHandler(this.dgvState_SelectionChanged);
             // 
             // bnStates
             // 
@@ -348,16 +354,24 @@
             // cmsCore
             // 
             this.cmsCore.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.updateStateToolStripMenuItem});
+            this.updateStateToolStripMenuItem,
+            this.refreshToolStripMenuItem});
             this.cmsCore.Name = "cmsCore";
-            this.cmsCore.Size = new System.Drawing.Size(153, 48);
+            this.cmsCore.Size = new System.Drawing.Size(142, 48);
             // 
             // updateStateToolStripMenuItem
             // 
             this.updateStateToolStripMenuItem.Name = "updateStateToolStripMenuItem";
-            this.updateStateToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.updateStateToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.updateStateToolStripMenuItem.Text = "Update State";
             this.updateStateToolStripMenuItem.Click += new System.EventHandler(this.updateStateToolStripMenuItem_Click);
+            // 
+            // refreshToolStripMenuItem
+            // 
+            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.refreshToolStripMenuItem.Text = "Refresh";
+            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // frmStateAndLocal
             // 
@@ -372,10 +386,11 @@
             this.Name = "frmStateAndLocal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "State and Local Governement Management";
+            this.Load += new System.EventHandler(this.frmStateAndLocal_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLga)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvState)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bnStates)).EndInit();
@@ -385,6 +400,8 @@
             this.bnLgas.ResumeLayout(false);
             this.bnLgas.PerformLayout();
             this.cmsCore.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bsStates)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLgas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,7 +410,7 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvLga;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvState;
         private System.Windows.Forms.BindingNavigator bnStates;
@@ -420,5 +437,8 @@
         private System.Windows.Forms.ToolStripButton tsbNewLga;
         private System.Windows.Forms.ContextMenuStrip cmsCore;
         private System.Windows.Forms.ToolStripMenuItem updateStateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
+        private System.Windows.Forms.BindingSource bsStates;
+        private System.Windows.Forms.BindingSource bsLgas;
     }
 }

@@ -60,15 +60,15 @@ namespace DAHP.Prototype
 
         }
 
-        private void txtSSN_TextChanged(object sender, EventArgs e)
-        {
-            double SSN = Convert.ToDouble(txtSSN.Text);
-        }
+        //private void txtSSN_TextChanged(object sender, EventArgs e)
+        //{
+        //    double SSN = Convert.ToDouble(txtSSN.Text);
+        //}
 
-        private void txtLevelGrade_TextChanged(object sender, EventArgs e)
-        {
-            string LevelGrade = Convert.ToString(txtGrade.Text);
-        }
+        //private void txtLevelGrade_TextChanged(object sender, EventArgs e)
+        //{
+        //    string LevelGrade = Convert.ToString(txtGrade.Text);
+        //}
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -84,10 +84,10 @@ namespace DAHP.Prototype
             string Unit = Convert.ToString(txtUnit.Text);
         }
 
-        private void txtLevel_TextChanged(object sender, EventArgs e)
-        {
-            int Level = Convert.ToInt32(txtLevel.Text);
-        }
+        //private void txtLevel_TextChanged(object sender, EventArgs e)
+        //{
+        //    int Level = Convert.ToInt32(txtLevel.Text);
+        //}
 
         private void txtTaxID_TextChanged(object sender, EventArgs e)
         {

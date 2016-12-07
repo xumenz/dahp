@@ -9,7 +9,7 @@ namespace DAHP.Domain
     public class Lga : BaseEntity
     {
         public string LocalGovernmentName { get; set; }
-        public Guid State { get; set; }
-
+        public virtual State State { get; set; }
+        public Guid StateId { get; set; }
     }
 }

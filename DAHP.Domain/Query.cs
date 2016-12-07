@@ -14,5 +14,6 @@ namespace DAHP.Domain
         public string ReasonForQuery { get; set; }
         public Guid EmployementId { get; set; }
         public EmploymentInfo EmploymentInfo { get; set; }
+        
     }
 }

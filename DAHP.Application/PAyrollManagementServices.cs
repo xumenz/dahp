@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAHP.Application
 {
-    public class PayrollManagementServices
+   class PayrollManagementServices
     {
         HPDbContext context;
 

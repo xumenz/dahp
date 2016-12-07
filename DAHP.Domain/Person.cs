@@ -28,13 +28,10 @@ namespace DAHP.Domain
         public ICollection<Education> Educations { get; set; }
         public ICollection<Qualification> Qualifications { get; set; }
 
+        public ICollection<NextOfKin> NextOfKins { get; set; }
+
        
 
     }
 
-    public enum Gender
-    {
-        Male = 1,
-        Female = 2
-    }
 }

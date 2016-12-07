@@ -23,6 +23,8 @@ namespace DAHP.Prototype
             InitializeComponent();
 
             _Service = new HRComponentService();
+
+           
         }
 
 
@@ -62,6 +64,7 @@ namespace DAHP.Prototype
                     if (_Service.createState(state) != Guid.Empty)
                     {
                         MessageBox.Show("State created successfully");
+                        ResetControl();
                     }
                 }
                 else
@@ -75,6 +78,11 @@ namespace DAHP.Prototype
             }
            
 
+        }
+
+        private void ResetControl()
+        {
+            txtStateName.Clear();
         }
 
         private bool IsValidEntry()

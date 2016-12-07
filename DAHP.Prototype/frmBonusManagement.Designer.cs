@@ -36,7 +36,7 @@
             this.gbBonusDescription = new System.Windows.Forms.GroupBox();
             this.gbBonusList = new System.Windows.Forms.GroupBox();
             this.dgvLgas = new System.Windows.Forms.DataGridView();
-            this.bnStates = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bnBonusList = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -47,7 +47,7 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbNewBonus = new System.Windows.Forms.ToolStripButton();
-            this.bnLgas = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bnBonusDescription = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -61,10 +61,10 @@
             this.gbBonusDescription.SuspendLayout();
             this.gbBonusList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLgas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bnStates)).BeginInit();
-            this.bnStates.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bnLgas)).BeginInit();
-            this.bnLgas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bnBonusList)).BeginInit();
+            this.bnBonusList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bnBonusDescription)).BeginInit();
+            this.bnBonusDescription.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -96,8 +96,8 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.gbBonusDescription, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.gbBonusList, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.bnStates, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.bnLgas, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.bnBonusList, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.bnBonusDescription, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -142,12 +142,12 @@
             this.dgvLgas.Size = new System.Drawing.Size(238, 295);
             this.dgvLgas.TabIndex = 0;
             // 
-            // bnStates
+            // bnBonusList
             // 
-            this.bnStates.AddNewItem = null;
-            this.bnStates.CountItem = this.bindingNavigatorCountItem;
-            this.bnStates.DeleteItem = null;
-            this.bnStates.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bnBonusList.AddNewItem = null;
+            this.bnBonusList.CountItem = this.bindingNavigatorCountItem;
+            this.bnBonusList.DeleteItem = null;
+            this.bnBonusList.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -158,16 +158,16 @@
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.tsbNewBonus});
-            this.bnStates.Location = new System.Drawing.Point(0, 320);
-            this.bnStates.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bnStates.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bnStates.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bnStates.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bnStates.Name = "bnStates";
-            this.bnStates.PositionItem = this.bindingNavigatorPositionItem;
-            this.bnStates.Size = new System.Drawing.Size(250, 25);
-            this.bnStates.TabIndex = 2;
-            this.bnStates.Text = "bindingNavigator1";
+            this.bnBonusList.Location = new System.Drawing.Point(0, 320);
+            this.bnBonusList.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.bnBonusList.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.bnBonusList.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.bnBonusList.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.bnBonusList.Name = "bnBonusList";
+            this.bnBonusList.PositionItem = this.bindingNavigatorPositionItem;
+            this.bnBonusList.Size = new System.Drawing.Size(250, 25);
+            this.bnBonusList.TabIndex = 2;
+            this.bnBonusList.Text = "bindingNavigator1";
             // 
             // bindingNavigatorCountItem
             // 
@@ -245,12 +245,12 @@
             this.tsbNewBonus.Size = new System.Drawing.Size(35, 22);
             this.tsbNewBonus.Text = "New";
             // 
-            // bnLgas
+            // bnBonusDescription
             // 
-            this.bnLgas.AddNewItem = null;
-            this.bnLgas.CountItem = this.bindingNavigatorCountItem1;
-            this.bnLgas.DeleteItem = null;
-            this.bnLgas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bnBonusDescription.AddNewItem = null;
+            this.bnBonusDescription.CountItem = this.bindingNavigatorCountItem1;
+            this.bnBonusDescription.DeleteItem = null;
+            this.bnBonusDescription.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem1,
             this.bindingNavigatorMovePreviousItem1,
             this.bindingNavigatorSeparator3,
@@ -260,16 +260,16 @@
             this.bindingNavigatorMoveNextItem1,
             this.bindingNavigatorMoveLastItem1,
             this.bindingNavigatorSeparator5});
-            this.bnLgas.Location = new System.Drawing.Point(250, 320);
-            this.bnLgas.MoveFirstItem = this.bindingNavigatorMoveFirstItem1;
-            this.bnLgas.MoveLastItem = this.bindingNavigatorMoveLastItem1;
-            this.bnLgas.MoveNextItem = this.bindingNavigatorMoveNextItem1;
-            this.bnLgas.MovePreviousItem = this.bindingNavigatorMovePreviousItem1;
-            this.bnLgas.Name = "bnLgas";
-            this.bnLgas.PositionItem = this.bindingNavigatorPositionItem1;
-            this.bnLgas.Size = new System.Drawing.Size(251, 25);
-            this.bnLgas.TabIndex = 3;
-            this.bnLgas.Text = "bindingNavigator2";
+            this.bnBonusDescription.Location = new System.Drawing.Point(250, 320);
+            this.bnBonusDescription.MoveFirstItem = this.bindingNavigatorMoveFirstItem1;
+            this.bnBonusDescription.MoveLastItem = this.bindingNavigatorMoveLastItem1;
+            this.bnBonusDescription.MoveNextItem = this.bindingNavigatorMoveNextItem1;
+            this.bnBonusDescription.MovePreviousItem = this.bindingNavigatorMovePreviousItem1;
+            this.bnBonusDescription.Name = "bnBonusDescription";
+            this.bnBonusDescription.PositionItem = this.bindingNavigatorPositionItem1;
+            this.bnBonusDescription.Size = new System.Drawing.Size(251, 25);
+            this.bnBonusDescription.TabIndex = 3;
+            this.bnBonusDescription.Text = "bindingNavigator2";
             // 
             // bindingNavigatorCountItem1
             // 
@@ -346,12 +346,12 @@
             this.gbBonusDescription.ResumeLayout(false);
             this.gbBonusList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLgas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bnStates)).EndInit();
-            this.bnStates.ResumeLayout(false);
-            this.bnStates.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bnLgas)).EndInit();
-            this.bnLgas.ResumeLayout(false);
-            this.bnLgas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bnBonusList)).EndInit();
+            this.bnBonusList.ResumeLayout(false);
+            this.bnBonusList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bnBonusDescription)).EndInit();
+            this.bnBonusDescription.ResumeLayout(false);
+            this.bnBonusDescription.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -364,7 +364,7 @@
         private System.Windows.Forms.GroupBox gbBonusDescription;
         private System.Windows.Forms.GroupBox gbBonusList;
         private System.Windows.Forms.DataGridView dgvLgas;
-        private System.Windows.Forms.BindingNavigator bnStates;
+        private System.Windows.Forms.BindingNavigator bnBonusList;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
@@ -375,7 +375,7 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton tsbNewBonus;
-        private System.Windows.Forms.BindingNavigator bnLgas;
+        private System.Windows.Forms.BindingNavigator bnBonusDescription;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem1;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator3;

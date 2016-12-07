@@ -16,9 +16,10 @@ namespace DAHP.Application
             context = new HPDbContext();
         }
 
+        // States
         public Guid createState(State state)
         {
-
+            state.Id = Guid.NewGuid();
             context.States.Add(state);
             context.SaveChanges();
 
@@ -26,7 +27,7 @@ namespace DAHP.Application
         }
 
 
-        public IList<State> GetState()
+        public IList<State> GetStates()
         {
             return context.States.ToList();
         }
@@ -39,10 +40,10 @@ namespace DAHP.Application
 
 
 
-
+// Local Government Area
         public Guid createLga(Lga lga)
         {
-
+            lga.Id = Guid.NewGuid();
             context.Lgas.Add(lga);
             context.SaveChanges();
 
@@ -50,9 +51,15 @@ namespace DAHP.Application
         }
 
 
-        public IList<Lga> GetLga()
+        public IList<Lga> GetLgas()
         {
             return context.Lgas.ToList();
+        }
+
+
+        public IList<Lga> GetLgasByState(Guid stateId)
+        {
+            return context.Lgas.Where(lg=>lg.StateId == stateId).ToList();
         }
 
 
@@ -66,7 +73,7 @@ namespace DAHP.Application
 
             if (CurrentState.Id != Guid.Empty)
             {
-                context.Lgas.Attach(CurrentState);
+                context.States.Attach(CurrentState);
                 context.SaveChanges();
 
                 return true;
@@ -75,5 +82,21 @@ namespace DAHP.Application
             return false;
         
         }
+
+        // Queries
+        public Guid createQuery(Query query)
+        {
+            context.Queries.Add(query);
+            context.SaveChanges();
+
+            return query.Id;
+        }
+
+        public IList<Query> GetQuery()
+        {
+            return context.Queries.ToList();
+        }
+
+    
     }
 }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class State : BaseEntity
+   
+    public enum Gender
     {
-        public string StateName { get; set; }
-
-        public ICollection<Lga> Lgas { get; set; }
+        Male = 1,
+        Female = 2
     }
 }

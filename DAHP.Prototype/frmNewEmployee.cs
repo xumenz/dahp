@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DAHP.Application;
+using DAHP.Domain;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +14,49 @@ namespace DAHP.Prototype
 {
     public partial class frmNewEmployee : Form
     {
+        HRManagementService _Services;
+        HRComponentService _ComponentService = new HRComponentService();
+        Person _Person;
+        ContactInfo _ContactInfo;
+        ContactPhone _ContactPhone;
+        Qualification _Qualification;
+        Education _Education;
+        NextOfKin _NextOfKin;
+
         public frmNewEmployee()
         {
             InitializeComponent();
+
+            initEmployee();
+
         }
 
+        private void initEmployee()
+        {
+            _Services = new HRManagementService();
+            _Person = new Person();
+            _Qualification = new Qualification();
+            _Education = new Education();
+            _ContactInfo = new ContactInfo();
+            _ContactPhone = new ContactPhone();
+            _NextOfKin = new NextOfKin();
+        }
+
+
+
+        void BindLgas()
+        {
+            this.cmbLGAofOrigin.DataSource = getLgas();
+
+            cmbLGAofOrigin.DisplayMember = "LocalGovernmentName";
+            cmbLGAofOrigin.ValueMember = "Id";
+        }
+
+
+        private List<Lga> getLgas()
+        {
+            return _ComponentService.GetLgas().ToList();
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -89,12 +129,12 @@ namespace DAHP.Prototype
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void frmNewEmployee_Load(object sender, EventArgs e)
         {
-
+            BindLgas();
         }
 
         private void label28_Click(object sender, EventArgs e)
@@ -169,8 +209,76 @@ namespace DAHP.Prototype
 
         private void btnSave_Click_1(object sender, EventArgs e)
         {
+            if (IsValidEntry())
+            {
+                _Services.createPerson(_Person);
+                _Services.createEducation(_Education);
+               // _Services.createProfessionalQualification(_Qualification);
+                
 
+                MessageBox.Show("Employee Details Added Successfully");
+            }
         }
 
+        private bool IsValidEntry()
+        {
+            assignValues();
+            if (String.IsNullOrEmpty (_Person.FirstName) && String.IsNullOrEmpty(_Person.Surname))
+            {
+                return false;
+            }
+            throw new NotImplementedException();
+        }
+
+       void assignValues()
+        {
+            _Person.FirstName = txtFirstname.Text;
+            _Person.Othernames = txtMiddleName.Text;
+            _Person.Surname = txtSurname.Text;
+            _Person.Gender = getGender();
+            _Person.DateofBirth = dtpBirthDate.Value.Date;
+      //      _Person.Lga = cmbLGAofOrigin;
+
+
+        //  _ContactInfo.AddressType = cmbAddressType.; 
+           _ContactInfo.Address = txtAddress.Text;
+           _ContactInfo.Email = txtEmail.Text;
+        //   _ContactInfo.lgaId = cmbLGA.
+
+           _ContactPhone.Phonenumber = txtPhoneNumber.Text;
+           _ContactPhone.Phonenumber = txtPhoneNumber2.Text;
+
+           _NextOfKin.Firstname = txtFName.Text;
+           _NextOfKin.OtherName = txtMName.Text;
+           _NextOfKin.Surname = txtSName.Text;
+           _NextOfKin.Relationship = txtRelationship.Text;
+           //_NextOfKin.PhoneNumber = 
+           _NextOfKin.ContactAddress = txtNKContactAddress.Text;
+         //  _NextOfKin.DateOfBirth =
+
+       //  _Education.CertificateIssueDate = cmbCertificateIssuseDate.
+           _Education.FinishDate = dtpFinishDate.Value.Date;
+           _Education.StartDate = dtpStartDate.Value.Date;
+           _Education.SchoolObtained = txtSchoolObtained.Text;
+         //  _Education.QualificationId = CmbDegreeName.
+
+           
+           _Qualification.DateObtained = dtpQualificationDate.Value.Date;
+          // _Qualification.QualificationName = cmbQualificationName.;
+           }
+
+        private Gender getGender()
+        {
+            if (rdbMale.Checked)
+            {
+                return Gender.Male;
+            }
+
+            else
+            {
+                return Gender.Female;
+            }
+
+        }
     }
 }

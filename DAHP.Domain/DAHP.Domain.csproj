@@ -55,6 +55,7 @@
     <Compile Include="EmployeeType.cs" />
     <Compile Include="EmploymentHistory.cs" />
     <Compile Include="EmploymentInfo.cs" />
+    <Compile Include="Gender.cs" />
     <Compile Include="GradeLevel.cs" />
     <Compile Include="JobHistory.cs" />
     <Compile Include="LevelDetail.cs" />

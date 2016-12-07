@@ -8,7 +8,7 @@ namespace DAHP.Domain
 {
    public class LevelDetail : BaseEntity
     {
-        public Guid Id { get; set; }
+      //  public Guid Id { get; set; }
         public Guid GradeLevelId { get; set; }
         public int Steps { get; set; }
         public double Amount { get; set; }

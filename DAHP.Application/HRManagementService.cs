@@ -82,7 +82,7 @@ namespace DAHP.Application
             return context.Educations.Include("Person").Where(ps=>ps.Id == id).FirstOrDefault();
         }
 
-
+//Employee
         public Guid createEmployeeCategory(EmployeeCategory EmployeeCategory)
         {
 
@@ -147,6 +147,7 @@ namespace DAHP.Application
         //    return context.EmployeeTypes.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
         //}
 
+        //Employment
         public Guid createEmploymentHistory(EmploymentHistory EmploymentHistory)
         {
 
