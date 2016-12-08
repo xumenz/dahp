@@ -13,6 +13,8 @@ namespace DAHP.Domain
         public string Email { get; set; }
         public AddressType AddressType { get; set; }
         public Guid lgaId { get; set; }
+
+        public bool IsCurrent { get; set; }
     }
 
     public enum AddressType

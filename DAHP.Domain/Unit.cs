@@ -8,6 +8,8 @@ namespace DAHP.Domain
 {
     public class Unit : BaseEntity
     {
-         public string UnitName  { get; set; }
+        public string UnitName  { get; set; }
+        public ICollection<EmploymentInfo> Employees { get; set; }
+        public Guid DepartmentId { get; set; }
     }
 }

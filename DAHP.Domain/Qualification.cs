@@ -10,5 +10,6 @@ namespace DAHP.Domain
     {
         public string QualificationName { get; set; }
         public DateTime DateObtained { get; set; }
+        public Guid PersonId { get; set; }
     }
 }

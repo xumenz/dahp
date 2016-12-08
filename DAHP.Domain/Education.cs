@@ -14,6 +14,7 @@ namespace DAHP.Domain
         public DateTime StartDate { get; set; }
         public DateTime FinishDate { get; set; }
         public EducationalQualification EducationalQualification { get; set; }
+        public Guid PersonId { get; set; }
     }
 
     public enum EducationalQualification

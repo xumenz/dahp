@@ -19,18 +19,15 @@ namespace DAHP.Domain
         
         public  Guid LgaId { get; set; }
         public virtual Lga Lga { get; set; }
-        public Guid StateId { get; set; }
-        public virtual State  States { get; set; }
+    
+        public ICollection<WorkExperience> WorkExperience { get; set; }
 
-
-        public ICollection<ContactInfo> ContactInformations { get; set; }
+        public ICollection<ContactInfo> ContactInformation { get; set; }
         public ICollection<ContactPhone> ContactPhones { get; set; }
-        public ICollection<Education> Educations { get; set; }
+        public ICollection<Education> Education { get; set; }
         public ICollection<Qualification> Qualifications { get; set; }
 
-        public ICollection<NextOfKin> NextOfKins { get; set; }
-
-       
+        public ICollection<ProfessionalQualification> ProfessionalQualifications { get; set; }
 
     }
 

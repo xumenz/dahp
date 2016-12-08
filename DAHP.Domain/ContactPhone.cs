@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DAHP.Domain
 {
-    public class JobHistory : BaseEntity
+    public class ContactPhone : BaseEntity
     {
-        public string JobExperience { get; set; }
-        public string Designation { get; set; }
-        public string JobDescription { get; set; }
         public Guid PersonId { get; set; }
+        public string Phonenumber { get; set; }
+
+        public bool IsActive { get; set; }
     }
 }
