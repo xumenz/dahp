@@ -26,5 +26,10 @@ namespace DAHP.Prototype
         {
             this.Close();
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
