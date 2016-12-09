@@ -45,7 +45,7 @@
     <Compile Include="CategoryBonus.cs" />
     <Compile Include="CategoryDeduction.cs" />
     <Compile Include="ContactInfo.cs" />
-    <Compile Include="ContactPhones.cs" />
+    <Compile Include="ContactPhone.cs" />
     <Compile Include="Department.cs" />
     <Compile Include="DepartmentHeadHistory.cs" />
     <Compile Include="Designation.cs" />
@@ -57,7 +57,7 @@
     <Compile Include="EmploymentInfo.cs" />
     <Compile Include="Gender.cs" />
     <Compile Include="GradeLevel.cs" />
-    <Compile Include="JobHistory.cs" />
+    <Compile Include="WorkExperience.cs" />
     <Compile Include="LevelDetail.cs" />
     <Compile Include="LGA.cs" />
     <Compile Include="PaymentSchedule.cs" />

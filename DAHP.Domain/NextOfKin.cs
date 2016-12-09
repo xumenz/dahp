@@ -8,7 +8,7 @@ namespace DAHP.Domain
 {
     public class NextOfKin : BaseEntity
     {
-        public Guid PersonId { get; set; }
+        public Person Person { get; set; }
         public string Firstname { get; set; }
 
         public string OtherName { get; set; }

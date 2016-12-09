@@ -10,6 +10,6 @@ namespace DAHP.Domain
     {
         public string DepartmentName { get; set; }
 
-        public ICollection<Unit> Unit { get; set; }
+        public ICollection<Unit> Units { get; set; }
     }
 }

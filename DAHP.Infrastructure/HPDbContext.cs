@@ -13,7 +13,7 @@ namespace DAHP.Infrastructure
     {
         public HPDbContext():base("name=HPDbContext")
         {
-
+            Database.SetInitializer(new DatabaseInitializer());
               
         }
 
@@ -38,7 +38,7 @@ namespace DAHP.Infrastructure
        public DbSet<EmployeeSalaryInfo> EmployeeSalaryInfos { get; set; }
        public DbSet<EmploymentHistory> EmploymentHistorys { get; set; }
        public DbSet<GradeLevel> GradeLevels { get; set; }
-       public DbSet<JobHistory> JobHistorys { get; set; }
+       public DbSet<WorkExperience> JobHistorys { get; set; }
        public DbSet<LevelDetail> LevelDetails { get; set; }
        public DbSet<Lga> Lgas { get; set; }
        public DbSet<NextOfKin>  NextOfKins { get; set; }
@@ -60,6 +60,26 @@ namespace DAHP.Infrastructure
            modelBuilder.Configurations.Add(new StateEntityConfig());
            modelBuilder.Configurations.Add(new LgaEntityConfig());
 
-       }
+            modelBuilder.Configurations.Add(new DepartmentEntityConfig());
+            modelBuilder.Configurations.Add(new UnitEntityConfig());
+
+            modelBuilder.Configurations.Add(new EmployeeCategoryEntityConfig());
+            modelBuilder.Configurations.Add(new PersonEntityConfig());
+            modelBuilder.Configurations.Add(new EmploymentInfoEntityConfig());
+            modelBuilder.Configurations.Add(new NextOfKinEntityConfig());
+       /*     modelBuilder.Configurations.Add(new LgaEntityConfig())*/;
+
+        }
+    }
+
+
+    public class DatabaseInitializer : DropCreateDatabaseIfModelChanges<HPDbContext>
+    {
+        protected override void Seed(HPDbContext context)
+        {
+            base.Seed(context);
+            //context.Database.ExecuteSqlCommand("CREATE UNIQUE NONCLUSTERED INDEX IX_StockEntry_DateReceived ON dbo.StockReceiveEntry(DateReceived);");
+
+        }
     }
 }

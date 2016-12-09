@@ -193,7 +193,7 @@ namespace DAHP.Application
 
         }
 
-        public Guid createJobHistory(JobHistory JobHistory)
+        public Guid createJobHistory(WorkExperience JobHistory)
         {
 
             context.JobHistorys.Add(JobHistory);
@@ -203,13 +203,13 @@ namespace DAHP.Application
         }
 
 
-        public IList<JobHistory> JobHistory()
+        public IList<WorkExperience> JobHistory()
         {
             return context.JobHistorys.ToList();
         }
 
 
-        public JobHistory GetJobHistory(Guid id)
+        public WorkExperience GetJobHistory(Guid id)
         {
             return context.JobHistorys.Include("Person").Where(ps => ps.Id == id).FirstOrDefault();
 

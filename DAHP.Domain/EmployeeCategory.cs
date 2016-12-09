@@ -9,5 +9,8 @@ namespace DAHP.Domain
     public class EmployeeCategory : BaseEntity
     {
         public string CategoryName { get; set; }
+
+        public ICollection<EmploymentInfo> Employees { get; set; }
+
     }
 }
