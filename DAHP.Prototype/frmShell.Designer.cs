@@ -35,22 +35,12 @@
             this.newQueryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newPromotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newUnitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.departmentToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.unitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.newQualificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stateAndLGAManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.queryTerminalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.departmentUnitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.departmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.operationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salesAndMarketingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.advertisingAndPromotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.accountsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.administrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.qualificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employmenHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchEmploymentHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -124,24 +114,10 @@
             // 
             // newUnitToolStripMenuItem
             // 
-            this.newUnitToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.departmentToolStripMenuItem1,
-            this.unitToolStripMenuItem1});
             this.newUnitToolStripMenuItem.Name = "newUnitToolStripMenuItem";
             this.newUnitToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.newUnitToolStripMenuItem.Text = "New Department and Unit";
-            // 
-            // departmentToolStripMenuItem1
-            // 
-            this.departmentToolStripMenuItem1.Name = "departmentToolStripMenuItem1";
-            this.departmentToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
-            this.departmentToolStripMenuItem1.Text = "Department";
-            // 
-            // unitToolStripMenuItem1
-            // 
-            this.unitToolStripMenuItem1.Name = "unitToolStripMenuItem1";
-            this.unitToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
-            this.unitToolStripMenuItem1.Text = "Unit";
+            this.newUnitToolStripMenuItem.Click += new System.EventHandler(this.newUnitToolStripMenuItem_Click);
             // 
             // newQualificationToolStripMenuItem
             // 
@@ -187,67 +163,10 @@
             // 
             // departmentUnitToolStripMenuItem
             // 
-            this.departmentUnitToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.departmentToolStripMenuItem,
-            this.unitToolStripMenuItem});
             this.departmentUnitToolStripMenuItem.Name = "departmentUnitToolStripMenuItem";
             this.departmentUnitToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.departmentUnitToolStripMenuItem.Text = "Department and Unit";
-            // 
-            // departmentToolStripMenuItem
-            // 
-            this.departmentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.operationsToolStripMenuItem,
-            this.salesAndMarketingToolStripMenuItem,
-            this.advertisingAndPromotionToolStripMenuItem,
-            this.accountsToolStripMenuItem,
-            this.iTToolStripMenuItem,
-            this.administrationToolStripMenuItem});
-            this.departmentToolStripMenuItem.Name = "departmentToolStripMenuItem";
-            this.departmentToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.departmentToolStripMenuItem.Text = "Department";
-            // 
-            // operationsToolStripMenuItem
-            // 
-            this.operationsToolStripMenuItem.Name = "operationsToolStripMenuItem";
-            this.operationsToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.operationsToolStripMenuItem.Text = "Operations";
-            // 
-            // salesAndMarketingToolStripMenuItem
-            // 
-            this.salesAndMarketingToolStripMenuItem.Name = "salesAndMarketingToolStripMenuItem";
-            this.salesAndMarketingToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.salesAndMarketingToolStripMenuItem.Text = "Sales and Marketing";
-            // 
-            // advertisingAndPromotionToolStripMenuItem
-            // 
-            this.advertisingAndPromotionToolStripMenuItem.Name = "advertisingAndPromotionToolStripMenuItem";
-            this.advertisingAndPromotionToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.advertisingAndPromotionToolStripMenuItem.Text = "Advertising and Promotion";
-            // 
-            // accountsToolStripMenuItem
-            // 
-            this.accountsToolStripMenuItem.Name = "accountsToolStripMenuItem";
-            this.accountsToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.accountsToolStripMenuItem.Text = "Accounts";
-            // 
-            // iTToolStripMenuItem
-            // 
-            this.iTToolStripMenuItem.Name = "iTToolStripMenuItem";
-            this.iTToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.iTToolStripMenuItem.Text = "IT";
-            // 
-            // administrationToolStripMenuItem
-            // 
-            this.administrationToolStripMenuItem.Name = "administrationToolStripMenuItem";
-            this.administrationToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.administrationToolStripMenuItem.Text = "Administration";
-            // 
-            // unitToolStripMenuItem
-            // 
-            this.unitToolStripMenuItem.Name = "unitToolStripMenuItem";
-            this.unitToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.unitToolStripMenuItem.Text = "Unit";
+            this.departmentUnitToolStripMenuItem.Click += new System.EventHandler(this.departmentUnitToolStripMenuItem_Click);
             // 
             // qualificationToolStripMenuItem
             // 
@@ -386,8 +305,6 @@
         private System.Windows.Forms.ToolStripMenuItem stateAndLGAManagementToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem queryTerminalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem departmentUnitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem departmentToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem unitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem qualificationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem payrolManagementToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salaryAllowanceGridToolStripMenuItem;
@@ -398,14 +315,6 @@
         private System.Windows.Forms.ToolStripMenuItem advancedOperationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem databaseBackupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dataConnectionConfigurationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem departmentToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem unitToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem operationsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salesAndMarketingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem advertisingAndPromotionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem accountsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iTToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem administrationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employmenHistoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchEmploymentHistoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employmentSalaryStructureToolStripMenuItem;

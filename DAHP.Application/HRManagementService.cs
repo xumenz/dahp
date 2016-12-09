@@ -302,10 +302,10 @@ namespace DAHP.Application
 
 
        
-
+//Unit
         public Guid createUnit(Unit Unit)
         {
-
+            Unit.Id = Guid.NewGuid();
             context.Units.Add(Unit);
             context.SaveChanges();
 
@@ -325,10 +325,16 @@ namespace DAHP.Application
 
         }
 
+        public IList<Unit> GetUnitByDepartment(Guid departmentId)
+        {
+            return context.Units.Where(un => un.DepartmentId == departmentId).ToList();
+        }
+
+        //Department
 
         public Guid createDepartment(Department Department)
         {
-
+            Department.Id = Guid.NewGuid();
             context.Departments.Add(Department);
             context.SaveChanges();
 
@@ -347,7 +353,7 @@ namespace DAHP.Application
             return context.Departments.Include("person").Where(ps => ps.Id == id).FirstOrDefault();
         }
 
-
+        // Department History
         public Guid createDepartmentHeadHistory(DepartmentHeadHistory DepartmentHeadHistory)
         {
 

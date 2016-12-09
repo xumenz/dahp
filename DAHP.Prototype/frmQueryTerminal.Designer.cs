@@ -118,7 +118,7 @@
             // lblOtherName
             // 
             this.lblOtherName.AutoSize = true;
-            this.lblOtherName.Location = new System.Drawing.Point(98, 62);
+            this.lblOtherName.Location = new System.Drawing.Point(98, 65);
             this.lblOtherName.Name = "lblOtherName";
             this.lblOtherName.Size = new System.Drawing.Size(78, 18);
             this.lblOtherName.TabIndex = 12;
@@ -127,7 +127,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(335, 28);
+            this.label11.Location = new System.Drawing.Point(335, 32);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(78, 18);
             this.label11.TabIndex = 11;
@@ -136,7 +136,7 @@
             // lblFirstname
             // 
             this.lblFirstname.AutoSize = true;
-            this.lblFirstname.Location = new System.Drawing.Point(92, 28);
+            this.lblFirstname.Location = new System.Drawing.Point(92, 31);
             this.lblFirstname.Name = "lblFirstname";
             this.lblFirstname.Size = new System.Drawing.Size(78, 18);
             this.lblFirstname.TabIndex = 10;
@@ -145,7 +145,7 @@
             // lblDeSignation
             // 
             this.lblDeSignation.AutoSize = true;
-            this.lblDeSignation.Location = new System.Drawing.Point(265, 105);
+            this.lblDeSignation.Location = new System.Drawing.Point(265, 101);
             this.lblDeSignation.Name = "lblDeSignation";
             this.lblDeSignation.Size = new System.Drawing.Size(82, 18);
             this.lblDeSignation.TabIndex = 9;
@@ -154,7 +154,7 @@
             // lblDept
             // 
             this.lblDept.AutoSize = true;
-            this.lblDept.Location = new System.Drawing.Point(9, 105);
+            this.lblDept.Location = new System.Drawing.Point(9, 100);
             this.lblDept.Name = "lblDept";
             this.lblDept.Size = new System.Drawing.Size(82, 18);
             this.lblDept.TabIndex = 7;
@@ -221,7 +221,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(444, 272);
+            this.btnCancel.Location = new System.Drawing.Point(444, 263);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 32);
             this.btnCancel.TabIndex = 12;
@@ -231,7 +231,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(363, 272);
+            this.btnSave.Location = new System.Drawing.Point(363, 263);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 32);
             this.btnSave.TabIndex = 11;
@@ -460,7 +460,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmQueryTerminal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " Terminal";
+            this.Text = " Query Terminal";
             this.Load += new System.EventHandler(this.frmQueryTerminal_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

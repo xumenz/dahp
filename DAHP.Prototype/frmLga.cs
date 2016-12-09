@@ -78,7 +78,8 @@ namespace DAHP.Prototype
         {
             txtLgaName.Clear();
         }
-    }
+
+          }
 
 
 

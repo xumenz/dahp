@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.gbSave = new System.Windows.Forms.GroupBox();
+            this.lblStateInfo = new System.Windows.Forms.Label();
             this.txtLgaName = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.lblStateInfo = new System.Windows.Forms.Label();
             this.gbSave.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +50,16 @@
             this.gbSave.TabIndex = 1;
             this.gbSave.TabStop = false;
             this.gbSave.Text = "Enter/Modify Lga";
+            // 
+            // lblStateInfo
+            // 
+            this.lblStateInfo.AutoSize = true;
+            this.lblStateInfo.Location = new System.Drawing.Point(12, 19);
+            this.lblStateInfo.Name = "lblStateInfo";
+            this.lblStateInfo.Size = new System.Drawing.Size(66, 18);
+            this.lblStateInfo.TabIndex = 7;
+            this.lblStateInfo.Text = "State Info";
+            this.lblStateInfo.Click += new System.EventHandler(this.lblStateInfo_Click);
             // 
             // txtLgaName
             // 
@@ -77,15 +87,6 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // lblStateInfo
-            // 
-            this.lblStateInfo.AutoSize = true;
-            this.lblStateInfo.Location = new System.Drawing.Point(12, 19);
-            this.lblStateInfo.Name = "lblStateInfo";
-            this.lblStateInfo.Size = new System.Drawing.Size(66, 18);
-            this.lblStateInfo.TabIndex = 7;
-            this.lblStateInfo.Text = "State Info";
             // 
             // frmLga
             // 

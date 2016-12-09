@@ -87,6 +87,7 @@
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
             // btnSave
             // 
@@ -109,6 +110,7 @@
             this.Name = "frmUnit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Unit";
+            this.Load += new System.EventHandler(this.frmUnit_Load_1);
             this.gbSave.ResumeLayout(false);
             this.gbSave.PerformLayout();
             this.ResumeLayout(false);

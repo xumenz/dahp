@@ -36,6 +36,7 @@ namespace DAHP.Prototype
 
         private void updateStateToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             if (currentState() != null)
             {
                 frmState frm = new frmState(currentState());

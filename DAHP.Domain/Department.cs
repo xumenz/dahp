@@ -9,5 +9,7 @@ namespace DAHP.Domain
     public class Department : BaseEntity
     {
         public string DepartmentName { get; set; }
+
+        public ICollection<Unit> Unit { get; set; }
     }
 }

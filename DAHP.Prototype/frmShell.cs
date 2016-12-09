@@ -107,5 +107,19 @@ namespace DAHP.Prototype
             //frm.MdiParent = this;
             //frm.Show();
         }
+
+        private void departmentUnitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Department_and_unit frm = new Department_and_unit();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void newUnitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Department_and_unit frm = new Department_and_unit();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

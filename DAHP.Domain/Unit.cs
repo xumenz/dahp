@@ -9,5 +9,7 @@ namespace DAHP.Domain
     public class Unit : BaseEntity
     {
          public string UnitName  { get; set; }
+         public virtual Department Department { get; set; }
+    public Guid DepartmentId { get; set; }
     }
 }
